@@ -1,0 +1,108 @@
+/*
+BEST PRACTICES
+- use sementic elements
+- Use Shorthand Hexadecimal Color Values
+- Group & Align Vendor Prefixes
+*/
+
+/* CSS Document */
+/*  -------------------------------------
+STYLE GUIDE/Reference
+----------------------------------------
+- use rems for font sizes
+- 12 column grid
+
+Thin = 100
+Extra-Light = 200
+Light = 300
+Regular = 400
+Medium = 500
+Semi-Bold = 600
+Extra-Bold = 800
+Black = 900
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Typography
+	1.1 - Headings
+	1.2 - Body Copy
+	1.3 - Buttons
+	1.4 - Forms
+	1.5 - Lists
+	1.6 - Tables
+2.0 - Navigation Menus
+	3.1 - Main Menu
+	3.2 - Sub Menu
+	3.3 - Footer Menu
+3.0 - Content
+	3.1 - Site Structure (Site Header, Advertisement, Site Footer)
+	3.2 - Section Name
+	3.3 - Section Name
+4.0 - Media
+5.0 - Utility
+	5.1 - Background Colors
+	5.2 - Text Colors
+	5.3 - Text Sizes
+	5.4 - Alignments
+6.0 - Misc Junk 
+7.0 - Media query
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+0.0 - Target All/General Styls
+-------------------------------------------------------------- */
+
+/*--------------------------------------------------------------
+1.0 - TYPOGRAPHY
+-------------------------------------------------------------- */
+  /* 1.2 - Body Copy */
+  font-family: 'Raleway', sans-serif;
+  font-size: 10px; 
+  /* 1.3 - Buttons */
+  /* 1.4 - Forms */
+  /* 1.5 - Lists */
+  /* 1.6 - Tables */
+  
+/*--------------------------------------------------------------
+2.0 - Navigation Menus
+-------------------------------------------------------------- */
+  /* 3.2 - Sub Menu */
+  /* 3.3 - Footer Menu */
+/*--------------------------------------------------------------
+3.0 - Content
+-------------------------------------------------------------- */
+  /* 3.1 - Site Structure (Site Header, Advertisement, Site Footer) */
+  /* 3.2 - Section Name */
+  /* 3.3 - Section Name */
+/*--------------------------------------------------------------
+4.0 - Media
+-------------------------------------------------------------- */
+
+/*--------------------------------------------------------------
+5.0 - Utility
+-------------------------------------------------------------- */
+  /* 5.1 - Background Colors */
+  /* 5.2 - Text Colors */
+  /* 5.3 - Text Sizes */
+  /* 5.4 - Alignments */
+  
+/*--------------------------------------------------------------
+6.0 - Misc Junk here
+-------------------------------------------------------------- */
+
+
+/*--------------------------------------------------------------
+7.0 media query
+-------------------------------------------------------------- */
+
+@media only screen  
+    and (max-device-width : 480px) {
+    /* Mobile Styles */
+    }
+
+    @media only screen  
+    and (max-device-width : 768px) {
+    /* Tablet Styles */
+    }
