@@ -11,6 +11,7 @@ STYLE GUIDE/Reference
 ----------------------------------------
 - use rems for font sizes
 - 12 column grid
+- numbers in classes always in words
 
 Thin = 100
 Extra-Light = 200
@@ -31,14 +32,13 @@ Black = 900
 	1.3 - Buttons
 	1.4 - Forms
 	1.5 - Lists
-	1.6 - Tables
 2.0 - Navigation Menus
 	3.1 - Main Menu
 	3.2 - Sub Menu
 	3.3 - Footer Menu
 3.0 - Content
 	3.1 - Site Structure (Site Header, Advertisement, Site Footer)
-	3.2 - Section Name
+	3.2 - Tables
 	3.3 - Section Name
 4.0 - Media
 5.0 - Utility
@@ -66,10 +66,13 @@ Black = 900
   	display: flex;
   	justify-content: space-between;
   }
+  h1, h2, h3, h4, h5, h6, .bg-black {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+  }
   /* 1.3 - Buttons */
   /* 1.4 - Forms */
   /* 1.5 - Lists */
-  /* 1.6 - Tables */
   
 /*--------------------------------------------------------------
 2.0 - Navigation Menus
@@ -102,7 +105,6 @@ Black = 900
   }
   section {
   	height: 100%;
-  	overflow-y: scroll;
   }
   section > header {
   	height: 25%;
@@ -116,7 +118,53 @@ Black = 900
   	display: flex;
   	justify-content: space-between;
   }
-  /* 3.2 - Section Name */
+  /* 3.2 - Tables */
+  table {
+    width: 100%;
+    overflow: hidden;
+  }
+  caption {
+    display: none;
+  }
+  .bg-black {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px;
+  }
+  th {
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 5px;
+  }
+  .border-one-right {
+    border-right: 1px solid #000;
+  }
+  tbody {
+    border-top: 3px solid #000;
+  }
+  tbody td {
+    padding: 20px;
+    text-transform: uppercase;
+  }
+  tr td:first-child {
+    font-weight: 700;
+  }
+  tbody tr {
+    border-bottom: 1px solid #000;
+  }
+  tbody tr td:nth-of-type(n+2) {
+    text-align: center;
+  }
+  tbody tr:last-of-type {
+    border: none;
+  }
+  td span {
+    display: block;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+  }
   /* 3.3 - Section Name */
 /*--------------------------------------------------------------
 4.0 - Media
