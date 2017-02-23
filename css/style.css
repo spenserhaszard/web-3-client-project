@@ -27,25 +27,25 @@ Black = 900
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 1.0 - Typography
-1.1 - Headings
-1.2 - Body Copy
-1.3 - Buttons
-1.4 - Forms
-1.5 - Lists
+  1.1 - Headings
+  1.2 - Body Copy
+  1.3 - Buttons
+  1.4 - Forms
+  1.5 - Lists
 2.0 - Navigation Menus
-3.1 - Main Menu
-3.2 - Sub Menu
-3.3 - Footer Menu
+  2.1 - Main Menu
+  2.2 - Sub Menu
+  2.3 - Footer Menu
 3.0 - Content
-3.1 - Site Structure (Site Header, Advertisement, Site Footer)
-3.2 - Tables
-3.3 - Section Name
+  3.1 - Site Structure (Site Header, Advertisement, Site Footer)
+  3.2 - Tables
+  3.3 - Section Name
 4.0 - Media
 5.0 - Utility
 5.1 - Background Colors
-5.2 - Text Colors
-5.3 - Text Sizes
-5.4 - Alignments
+  5.2 - Text Colors
+  5.3 - Text Sizes
+  5.4 - Alignments
 6.0 - Misc Junk 
 7.0 - Media query
 --------------------------------------------------------------*/
@@ -57,17 +57,24 @@ Black = 900
 /*--------------------------------------------------------------
 1.0 - TYPOGRAPHY
 -------------------------------------------------------------- */
+/*1.1 - Headings */
+h2, h3 {
+  text-align: center;
+  background-color: black;
+  width: 90%;
+  height: 85%;
+}
+
 /* 1.2 - Body Copy */
 body {
 	font-family: 'Raleway', sans-serif;
 	font-size: 10px; 
 	padding: 20px;
 	background-color: #f0f0f0;
-	display: flex;
 	justify-content: space-between;
   height: 100vh;
-  margin: 0 auto;
 }
+
 
 /* 1.3 - Buttons */
 /* 1.4 - Forms */
@@ -79,7 +86,8 @@ body {
 nav {
   height: 90vh;
   min-width: 140px;
-  position: fixed;
+/*  position: fixed;*/
+  margin-right: 20px;
 
   flex-direction: column;
   justify-content: space-between;
@@ -159,7 +167,24 @@ footer li {
   width: 84%;
 }
 
+.col-7-8 {
+  width: 87.5%;
+}
 
+.header-lg {
+  height: 18vh;
+  justify-content: space-between
+}
+
+.header-lg>div:first-child {
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.sub-section {
+  margin-top: 20px;
+}
 
 
 
@@ -174,12 +199,13 @@ footer li {
 5.0 - Utility
 -------------------------------------------------------------- */
 /* 5.1 - Background Colors */
-.bg-lite {
-  background-color: #f0f0f0;
+.main-nav, header p {
+  background-color: grey; /*change to speckled pattern later*/
 }
-.main-nav {
-  background-color: purple; /*change to speckled pattern later*/
+.header-lg>div:first-child {
+  background-color: orange;
 }
+
 
 /* 5.2 - Text Colors */
 /* 5.3 - Text Sizes */
@@ -191,7 +217,16 @@ footer li {
 .main-border {
 	border-color: #383838;
 	border-style: solid;
-	border-width: 3px 10px;
+	border-width: 3px 8px;
+
+  background-color: #f0f0f0;
+
+}
+
+.border-right-3 {
+  border-right-style: solid;
+  border-right-width: 3px;
+  border-right-color: #383838;
 }
 /*--------------------------------------------------------------
 6.0 - Misc Junk here
