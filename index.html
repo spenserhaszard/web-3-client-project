@@ -13,7 +13,8 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300i,400i" rel="stylesheet">
     </head>
 <body class="flex-parent">
         <!--[if lt IE 8]>
@@ -28,10 +29,10 @@
     </h1>
 
     <!--start primary nav-->
-    <ul class="main-menu">
+     <ul class="main-menu">
         <li><a href="#menu">Menu</a>
             <!--start drop down nav inside of li-->
-            <ul class="sub-menu">
+             <ul class="sub-menu">
                 <li><a href="#pizza">Pizza</a></li>
                 <li><a href="#beer">Beer</a></li>
                 <li><a href="#bread">Loaded Bread</a></li>
@@ -40,13 +41,12 @@
                 <li><a href="#kids">Kid's Menu</a></li>
             </ul>
             <!--end drop down nav-->
-        </li>
+         </li>
         <li><a href="#hours">Hours</a></li>
         <li><a href="#delivery">Delivery</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
     <!--end primary nav-->
-
     <footer>
         <ul class="flex-parent">
             <li>(402) 477-9166</li><!--add in tel shit-->
@@ -61,13 +61,12 @@
 <main class="col-7-8">
 
     <!--start bread section-->
-    <section id="bread">
+    <!-- <section id="bread">
 
         <header class="header-lg flex-parent  main-border">
             <div class="col-3-4 flex-parent border-right-3">
                 <h2>Loaded Bread</h2>
             </div>
-            <div class="col-1-4">insert pic of gluten free thing</div>
         </header>
 
 
@@ -108,9 +107,129 @@
                 </ol>
             </section>
         </section>
+    </section> --> <!-- end bread section -->
+
+    <!-- start pizza section -->
+    <section id="pizza">
+        <header class="header-lg flex-parent  main-border">
+            <div class="col-3-4 flex-parent border-right-3">
+                <h2>pizza</h2>
+            </div>
+            <div class="col-1-4">insert pic of gluten free thing</div>
+        </header>
+
+        <!-- daily specials -->
+        <section class="col-1-2 sub-section main-border">
+            <header>
+                <div class="flex-parent">
+                    <h3 class="col-2-3 border-right-3 flex-parent align-items-center">
+                        <p class="col-1-1">daily specials</p>
+                    </h3>
+                    <div class="col-1-3 italic">
+                        <div>
+                            <p>includes side salad and drink</p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="flex-parent">
+               <div class="col-5-6 border-right-3">
+                    <section class="flex-parent">
+                        <h4>slice</h4>
+                        <p>marinara - cheese - 2 toppings</p>
+                        <p><span>6.80</span></p><!--more semantic alternative??-->
+                    </section>
+
+                    <section class="flex-parent">
+                        <h4>specialty slice</h4>
+                        <p>any specialty slice</p>
+                        <p><span>7.50</span></p><!--more semantic alternative??-->
+                    </section>
+                </div>
+
+                <div class="col-1-6 flex-parent align-items-center">
+                    <img src="img/pizza.png" alt="">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- the international -->
+        <section class="col-1-2 sub-section main-border">
+            <header>
+                 <div class="flex-parent">   
+                    <h3 class="col-7-8 border-right-3 flex-parent align-items-center">
+                        <p class="col-1-1">the international</p>
+                    </h3>
+                    <div class="col-1-8">
+                        <div>
+                            <p>build<br>your<br>own</p>
+                        </div>
+                    </div>
+                 </div>
+
+                <div class="col-1-1 italic">
+                    <p>includes up to five toppings plus your choice of sauce</p>
+                </div>
+                <ul class="col-1-1 flex-parent space-between">
+                    <li>
+                        <ul>
+                            <li>slice</li>
+                            <li>5.10</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li>12" medium</li>
+                            <li>16.00</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li>16" large</li>
+                            <li>22.00</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li>20" xlarge</li>
+                            <li>27.00</li>
+                        </ul>
+                    </li>
+                </ul>
+            </header>
+
+            <section class="block">
+                <h4>fruit &amp; nut</h4>
+                <p>almonds - cranberry - pineapple - walnut</p>
+            </section>
+            <section class="block">
+                <h4>cheese</h4>
+                <p>mozzarella - cheddar - cream cheese - monterey jack - ricotta - parmesan - provolone - blue cheese - feta - vegan</p>
+            </section>
+            <section class="block">
+                <h4>vegetable</h4>
+                <p>artichoke - bell pepper - black olive - broccoli - caper - corn - garlic - green olive - jalapeño - mushroom - onion - pepperoncini - potato - red onion - sauerkraut - spinach - sun-dried tomato - tomato - zucchini</p>
+            </section>
+            <section class="block">
+                <h4>meat</h4>
+                <p>hamburger - italian sausage - pepperoni - bacon - grilled chicken - ground turkey - ham - anchovie</p>
+            </section>
+            <section class="block">
+                <h4>sauce</h4>
+                <p>marinara - pesto - red pesto - bbq sauce - white - oil &amp; herbs</p>
+            </section>
+
+        </section>        
 
 
-    </section>
+
+    </section> 
+ 
+
+
+    <!-- end pizza section -->
 
 
 </main>

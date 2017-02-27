@@ -57,24 +57,73 @@ Black = 900
 /*--------------------------------------------------------------
 1.0 - TYPOGRAPHY
 -------------------------------------------------------------- */
+html {
+  font-size: 10px; 
+  color: #383838;
+}
+
 /*1.1 - Headings */
 h2, h3 {
   text-align: center;
-  background-color: black;
-  width: 90%;
-  height: 85%;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  background-color: #383838;
+  color: #f0f0f0;
+  padding: 5px;
+}
+
+h4 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
+  font-weight: 300;
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
+  letter-spacing: -10;
+}
+
+.sub-section header .col-1-8 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 4px;
+  text-align: center;
 }
 
 /* 1.2 - Body Copy */
 body {
 	font-family: 'Raleway', sans-serif;
-	font-size: 10px; 
 	padding: 20px;
 	background-color: #f0f0f0;
 	justify-content: space-between;
   height: 100vh;
 }
 
+.sub-section section p {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.sub-section:first-of-type section p {
+  margin: 0 10px;
+}
+
+h3 p {
+  background-color: black;
+  padding: 6px 0;
+}
 
 /* 1.3 - Buttons */
 /* 1.4 - Forms */
@@ -82,8 +131,23 @@ body {
 .sub-section section ol {
   justify-content: space-around;
 }
-.sub-section header ol {
+.sub-section header ul, .sub-section header ol {
   justify-content: space-around;
+}
+
+.sub-section header ul ul li {
+  font-size: 1.4rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.sub-section header ul ul li:last-child {
+  font-weight: 700;
+}
+
+ul li, ol li {
+  text-align: center;
 }
 /*--------------------------------------------------------------
 2.0 - Navigation Menus
@@ -128,12 +192,16 @@ footer li {
 -------------------------------------------------------------- */
 /* 3.1 - Structure (Widths) */
 
+.col-1-1 {
+  width: 100%;
+}
+
 .col-1-2 {
   width: 50%;
 }
 
 .col-1-3 {
-  width: 33%;
+  width: 33.33%;
 }
 
 .col-1-4 {
@@ -153,7 +221,7 @@ footer li {
 }
 
 .col-2-3 {
-  width: 66%;
+  width: 66.66%;
 }
 
 .col-2-5 {
@@ -194,24 +262,36 @@ footer li {
   margin-top: 20px;
 }
 
+.sub-section header>*, h3 {
+  padding: 5px 10px;
+}
+
+.sub-section header>.flex-parent:first-child {
+  padding: 0;
+}
 
 
 /* 3.3 - Section Name */
 /*--------------------------------------------------------------
 4.0 - Media
 -------------------------------------------------------------- */
-
+.sub-section:first-of-type img {
+  width: 68px;
+  height: 68px;
+  margin: 0 auto;
+}
 
 
 /*--------------------------------------------------------------
 5.0 - Utility
 -------------------------------------------------------------- */
 /* 5.1 - Background Colors */
-.main-nav, header p {
-  background-color: grey; /*change to speckled pattern later*/
-}
 .header-lg>div:first-child {
   background-color: orange;
+}
+
+h3 {
+  background-color: grey;
 }
 
 
@@ -221,14 +301,28 @@ footer li {
 .flex-parent {
   display: flex;
 }
+
+.align-items-center {
+  align-items: center;
+}
+
+/*.wrap {
+  flex-wrap: wrap;
+}*/
+
+.space-between {
+  justify-content: space-between;
+}
+
+.block > * {
+  display: block;
+}
 /* 5.5 - Borders */
 .main-border {
 	border-color: #383838;
 	border-style: solid;
 	border-width: 3px 8px;
-
   background-color: #f0f0f0;
-
 }
 
 .border-right-3 {
@@ -236,9 +330,26 @@ footer li {
   border-right-width: 3px;
   border-right-color: #383838;
 }
+
+/*#pizza .sub-section:first-of-type header, #pizza .sub-section header .flex-parent {
+  border-bottom: 3px solid #383838;;
+}*/
+
+#pizza .sub-section header>* {
+  border-bottom: 3px solid #383838;
+}
+
 .sub-section section {
   border-bottom: 1px solid #383838;
+  padding: 10px;
 }
+
+.sub-section section:last-of-type {
+  border-bottom: 0px;
+}
+
+
+
 /*--------------------------------------------------------------
 6.0 - Misc Junk here
 -------------------------------------------------------------- */
@@ -247,10 +358,20 @@ footer li {
 7.0 media query
 -------------------------------------------------------------- */
 
-@media only screen  
-    and (max-device-width : 480px) {
-    /* Mobile Styles */
-    }
+
+@media (max-width: 480px) {
+    .col-1-2 {
+      width: 100%;
+    }
+
+    .sub-section header.flex-parent {
+      display: block;
+    }
+
+    .sub-section header.flex-parent>* {
+      width: 100%;
+    }
+}
 
     @media only screen  
     and (max-device-width : 768px) {
