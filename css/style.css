@@ -160,16 +160,22 @@ nav {
 
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 h1 img {
-  width: 75px;
+  width: 135px;
+  width: 80%;
+  max-width: 135px;
 }
 
 h1 {
   height: 30%;
+  justify-content: center;
 }
-
+h1 div {
+  min-height: 30%;
+}
 /* 3.1 - Main Menu */
 .main-menu {
   height: 50%;
