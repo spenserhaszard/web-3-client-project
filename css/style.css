@@ -104,11 +104,12 @@ h4 {
 
 /* 1.2 - Body Copy */
 body {
-	font-family: 'Raleway', sans-serif;
-	padding: 20px;
-	background-color: #f0f0f0;
-	justify-content: space-between;
+  font-family: 'Raleway', sans-serif;
+  padding: 20px;
+  background-color: #f0f0f0;
+  justify-content: space-between;
   height: 100vh;
+  min-height: 700px;
 }
 
 .sub-section section p {
@@ -167,11 +168,18 @@ nav .main-menu {
 }
 
 nav li.sub-menu {
-  width: 80%;
+  width: 90%;
+  height: 100%;
   padding: 0;
-  justify-content: flex-end;
   background-color: #f0f0f0;
   border-left: 3px solid #383838;
+}
+
+nav .sub-menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
 }
 nav .sub-menu li {
   font-family: "Montserrat";
@@ -179,7 +187,7 @@ nav .sub-menu li {
   border-bottom: 1px solid #383838;
 }
 nav .sub-menu a {
-  padding: 10px;
+  padding: 12px;
   display: block;
 }
 nav .sub-menu li:last-of-type {
@@ -197,7 +205,7 @@ nav .sub-menu a:hover {
 2.0 - Navigation Menus
 -------------------------------------------------------------- */
 nav {
-  height: 90vh;
+
   min-width: 140px;
 /*  position: fixed;*/
   margin-right: 20px;
@@ -212,7 +220,7 @@ h1 img {
 }
 
 h1 {
-  height: 30%;
+  height: 18%;
   justify-content: center;
   border-bottom: 3px solid #383838;
 }
@@ -221,14 +229,15 @@ h1 div {
 }
 /* 3.1 - Main Menu */
 .main-menu {
-  height: 50%;
+  height: 64%;
 }
 
 /* 3.2 - Sub Menu */
 
 /* 3.3 - Footer Menu */
 footer ul {
-  height: 20%;
+  /* GRETCHEN */
+  height: 18%;
   flex-direction: column;
   justify-content: space-around;
 }
@@ -373,9 +382,9 @@ body {
 }
 /* 5.5 - Borders */
 .main-border {
-	border-color: #383838;
-	border-style: solid;
-	border-width: 3px 8px;
+  border-color: #383838;
+  border-style: solid;
+  border-width: 3px 8px;
   background-color: #f0f0f0;
 }
 
