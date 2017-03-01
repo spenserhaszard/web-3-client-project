@@ -128,6 +128,14 @@ h3 p {
 }
 
 /* 1.3 - Buttons */
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: none;
+}
+
 /* 1.4 - Forms */
 /* 1.5 - Lists */
 .sub-section section ol {
@@ -168,13 +176,9 @@ nav, nav a {
   color: #383838;
 }
 
-a {
-  text-decoration: none;
-}
-
 .sub-menu a {
   padding: 12px;
-  display: inline-block;
+  display: block;
 }
 .sub-menu a:active {
   background-color: #feba13;
@@ -183,10 +187,6 @@ a {
   background-color: #383838;
   color: #f0f0f0;
 }
-
-
-
-
 
 
 /*--------------------------------------------------------------
@@ -235,13 +235,13 @@ h1 div {
   padding: 0;
   background-color: #f0f0f0;
   border-left: 3px solid #383838;
-  align-items: space-between;
 }
 
 .sub-menu ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: space-between;
   width: 100%;
 }
 
@@ -374,6 +374,7 @@ body {
   background-image: url(../img/dots.png);
   background-repeat: repeat;
   background-size: 15px;
+  position: relative;
 }
 
 /* 5.2 - Text Colors */
@@ -442,7 +443,7 @@ body {
 
 
 .show {
-  display: flex;
+  display: block;
   animation: bkgchange 1s;
 }
 
@@ -459,6 +460,40 @@ body {
 
 
 @media (max-width: 480px) {
+
+
+
+    /*--------------------------------------------------------------
+    >>>  M O B I L E  S T Y L E S:
+    ----------------------------------------------------------------
+    1.0 - Typography
+      1.1 - Headings
+      1.2 - Body Copy
+      1.3 - Buttons
+      1.4 - Forms
+      1.5 - Lists
+      1.6 - Nav Typography
+    2.0 - Navigation Menus
+      2.1 - Main Menu
+      2.2 - Sub Menu
+      2.3 - Footer Menu
+    3.0 - Content
+      3.1 - Site Structure (Site Header, Advertisement, Site Footer)
+      3.2 - Tables
+      3.3 - Section Name
+    4.0 - Media
+    5.0 - Utility
+    5.1 - Background Colors
+      5.2 - Text Colors
+      5.3 - Text Sizes
+      5.4 - Alignments
+    --------------------------------------------------------------*/
+
+
+    /*--------------------------------------------------------------
+    1.0 - M O B I L E  T Y P O G R A P H Y
+    -------------------------------------------------------------- */
+
     .col-1-2 {
       width: 100%;
     }
@@ -470,6 +505,62 @@ body {
     .sub-section header.flex-parent>* {
       width: 100%;
     }
+
+
+
+
+
+    /*--------------------------------------------------------------
+    2.0 - M O B I L E  N A V I G A T I O N
+    -------------------------------------------------------------- */
+
+    /*--N A V  B U T T O N --*/
+    .btn {
+      text-transform: uppercase;
+      font-size: 2rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      color: #383838;
+
+      display: inline-block;
+      padding: 5px 10px;
+      background-color: #feba13;
+      border: 3px solid #383838;
+
+      position: absolute;
+
+      transform: rotate(90deg) translateX(27px) translateY(48px);
+    }
+
+    .btn:hover {
+      background-color: #383838;
+      color: #f0f0f0;
+    }
+
+
+    .minimize {
+      display: none;
+    }
+
+    .maximize {
+      display: flex;
+    }
+
+    nav.maximize {
+      position: absolute;
+      z-index: 2;
+    }
+
+
+
+
+
+
+
+
+
+
+
 }
 
     @media only screen  
