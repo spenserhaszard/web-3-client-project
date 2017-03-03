@@ -118,9 +118,9 @@ body {
   font-weight: 400;
 }
 
-.sub-section:first-of-type section p {
+/*.sub-section:first-of-type section p {
   margin: 0 10px;
-}
+}*/
 
 .sub-section p span {
   font-family: 'Montserrat', sans-serif;
@@ -160,7 +160,13 @@ a {
 section ul li, section ol li {
   text-align: center;
 }
-
+.sub-section header > ul > li {
+    border-right: 3px solid #383838;
+    padding-right: 3%;
+}
+.sub-section header ul li:last-of-type {
+  border-right: none;
+  }
 
 /* 1.6 - Nav Typography */
 .main-menu {
@@ -346,8 +352,8 @@ footer li {
   padding: 5px 10px;
 }*/
 
-.italic-cell, header .col-1-8, header ol, header ul {
-  padding: 5px 10px;
+ .italic-cell, header .col-1-8, header ol, header ul {
+    padding: 0px 10px;
 }
 
 .specials section {
@@ -419,7 +425,7 @@ body {
 }
 .flow {
   flex-flow: column wrap;
-  max-height: 1000px;
+  max-height: 1200px;
   width: 100%;
   align-content: space-between;
 }
