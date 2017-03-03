@@ -425,10 +425,12 @@ body {
 }
 .flow {
   flex-flow: column wrap;
-  max-height: 1200px;
+  max-height: 2000px;
   width: 100%;
   align-content: space-between;
 }
+/*this doesn't work anymore?*/
+
 .flow .sub-section.col-1-2 {
   width: 49%;
 }
