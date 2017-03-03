@@ -122,6 +122,12 @@ body {
   margin: 0 10px;
 }
 
+.sub-section p span {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
 /* 1.3 - Buttons */
 a {
   text-decoration: none;
@@ -342,6 +348,14 @@ footer li {
 
 .italic-cell, header .col-1-8, header ol, header ul {
   padding: 5px 10px;
+}
+
+.specials section {
+  justify-content: space-between;
+}
+
+.sub-section header ol {
+
 }
 
 
