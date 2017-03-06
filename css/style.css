@@ -93,7 +93,7 @@ h4 {
   font-weight: 300;
   font-family: 'Merriweather', serif;
   font-size: 2rem;
-  letter-spacing: -10;
+  letter-spacing: -1px;
 }
 
 .sub-section header .col-1-8 {
@@ -167,12 +167,12 @@ section ul li, section ol li {
   text-align: center;
 }
 .sub-section header > ul > li {
-    border-right: 3px solid #383838;
-    padding-right: 3%;
+    border-right: 3px solid #383838;
+    padding-right: 3%;
 }
 .sub-section header ul li:last-of-type {
-  border-right: none;
- }
+  border-right: none;
+}
 
 #hours .flex-parent {
   justify-content: space-between;
@@ -293,7 +293,7 @@ footer {
 }
 /*  flex-direction: column;
   justify-content: space-around;*/
-}
+
 /*flex isn't working on footer ul*/
 footer li {
   padding: 5px 0;
@@ -378,7 +378,7 @@ footer li {
 }*/
 
  .italic-cell, header .col-1-8, header ol, header ul {
-    padding: 0px 10px;
+  padding: 0 10px;
 }
 
 .pizza-specials section, .kids-pizza-specials section, .kids-potato-specials section {
@@ -393,7 +393,9 @@ footer li {
 
 #pizza .flow {
   max-height: 1200px;
-} /*is there a more responsive way to do this?
+} 
+
+/*is there a more responsive way to do this?
 seems like it will break on different resolutions?*/
 
 .sub-section {
@@ -418,7 +420,13 @@ of column next to it*/
 .potato-specialties {
   height: 100%;
 }
-
+.content-wrapper {
+  justify-content: space-between;
+}
+.content-wrapper > .col-1-2 {
+  width: 49%;
+  height: 100%;
+}
 
 /* 3.3 - Section Name */
 /*--------------------------------------------------------------
@@ -557,12 +565,6 @@ body {
 /*--------------------------------------------------------------
 7.0 media query
 -------------------------------------------------------------- */
-
-
-@media (max-width: 480px) {
-
-
-
     /*--------------------------------------------------------------
     >>>  M O B I L E  S T Y L E S:
     ----------------------------------------------------------------
@@ -588,6 +590,20 @@ body {
       5.3 - Text Sizes
       5.4 - Alignments
     --------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  .sub-section.col-1-2 {
+    width: 100%;
+  }
+  .content-wrapper > .col-1-2 {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+
+
 
 
     /*--------------------------------------------------------------
@@ -655,18 +671,4 @@ body {
 
 
 
-
-
-
-
-
-
 }
-
-    @media only screen  
-    and (max-device-width : 768px) {
-    /* Tablet Styles */
-.sub-section.col-1-2 {
-  width: 100%;
-}
-    }
