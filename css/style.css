@@ -112,7 +112,7 @@ body {
   background-color: #f0f0f0;
   justify-content: space-between;
   height: 100vh;
-  min-height: 700px;
+  min-height: 718px;
 }
 
 .sub-section section p {
@@ -241,7 +241,12 @@ h1 div {
 }
 
 .main-menu>li {
+  flex-basis: 15%;
   padding: 13px 6px;
+}
+
+.main-menu >.sub-menu {
+  flex-basis: 40%;
 }
 
 /* 3.2 - Sub Menu */
@@ -490,9 +495,9 @@ body {
 }*/
 /*this doesn't work anymore?*/
 
-.flow .sub-section.col-1-2 {
+/*.flow .sub-section.col-1-2 {
   width: 49%;
-}
+}*/
 /* 5.5 - Borders */
 .main-border {
   border-color: #383838;
@@ -548,8 +553,6 @@ body {
   0% {opacity: 0;}
   100% {opacity: 1;}
 }
-
-
 
 /*--------------------------------------------------------------
 7.0 media query
@@ -663,4 +666,7 @@ body {
     @media only screen  
     and (max-device-width : 768px) {
     /* Tablet Styles */
+.sub-section.col-1-2 {
+  width: 100%;
+}
     }
