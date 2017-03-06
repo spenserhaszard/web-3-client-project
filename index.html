@@ -27,7 +27,7 @@
 
 
 <!--start nav bar-->
-<nav class="minimize main-border flex-parent col-1-8">
+<nav class="minimize main-border flex-parent">
     <h1 class="flex-parent align-items-center">
         <div>
             <img src="img/logo.png" alt="Yia Yia's around the world pizza">
@@ -37,7 +37,7 @@
     <!--start primary nav-->
      <ul class="main-menu flex-parent">
         <li><a href="#menu">Menu</a></li>
-        <li class="sub-menu flex-parent">
+        <li class="sub-menu">
              <ul>
                 <li><a href="#pizza">Pizza</a></li>
                 <li><a href="#beer">Beer</a></li>
@@ -52,8 +52,8 @@
         <li><a href="#contact">Contact</a></li>
     </ul>
     <!--end primary nav-->
-    <footer>
-        <ul class="flex-parent">
+    <footer class="flex-parent">
+        <ul>
             <li>(402) 477-9166</li><!--add in tel shit-->
             <li>1423 East 'O' Street<br> Lincoln, NE 68508</li>
             <li><a href="https://www.facebook.com/yiayias" target="_blank">Facebook</a></li>
@@ -95,21 +95,21 @@
             </header>
             <section class="flex-parent">
                 <h4 class="col-3-5">Garlic, Oil &amp; Herbs</h4>
-                <ol class="flex-parent col-2-5">
+                <ol class="flex-parent col-2-5 item-prices">
                     <li>3.50</li>
                     <li>4.30</li>
                 </ol>
             </section>
             <section class="flex-parent">
                 <h4 class="col-3-5">Three Cheese</h4>
-                <ol class="flex-parent col-2-5">
+                <ol class="flex-parent col-2-5 item-prices">
                     <li>4.50</li>
                     <li>5.80</li>
                 </ol>
             </section>
             <section class="flex-parent">
                 <h4 class="col-3-5">Garlic &amp; Cheese</h4>
-                <ol class="flex-parent col-2-5">
+                <ol class="flex-parent col-2-5 item-prices">
                     <li>4.50</li>
                     <li>5.80</li>
                 </ol>
@@ -129,11 +129,11 @@
 
         <div class="flex-parent flow">
         <!-- daily specials -->
-        <section class="col-1-2 sub-section main-border">
+        <section class="col-1-2 sub-section main-border pizza-specials">
             <header>
                 <div class="flex-parent border-bottom-3">
                     <div class="header-cell col-2-3 border-right-3 flex-parent">
-                        <h3 class="col-1-1">daily specials</h3>
+                        <h3>daily specials</h3>
                     </div>
                     <div class="col-1-3 italic-cell">
                         <div>
@@ -143,18 +143,18 @@
                 </div>
             </header>
 
-            <div class="flex-parent specials">
+            <div class="flex-parent">
                <div class="col-5-6 border-right-3">
                     <section class="flex-parent">
                         <h4>slice</h4>
                         <p>marinara - cheese - 2 toppings</p>
-                        <p><span>6.80</span></p><!--more semantic alternative??-->
+                        <ol class="item-prices"><li>6.80</li></ol>
                     </section>
 
                     <section class="flex-parent">
                         <h4>specialty slice</h4>
                         <p>any specialty slice</p>
-                        <p><span>7.50</span></p><!--more semantic alternative??-->
+                        <ol class="item-prices"><li>7.50</li></ol><!--more semantic alternative??-->
                     </section>
                 </div>
 
@@ -166,11 +166,11 @@
         </section>
 
         <!-- the international -->
-        <section class="col-1-2 sub-section main-border">
+        <section class="col-1-2 sub-section main-border pizza-international">
             <header>
                  <div class="flex-parent border-bottom-3">   
                     <div class="header-cell col-7-8 border-right-3 flex-parent">
-                        <h3 class="col-1-1">the international</h3>
+                        <h3>the international</h3>
                     </div>
 
 
@@ -193,19 +193,19 @@
                     </li>
                     <li>
                         <ul>
-                            <li>12" medium</li>
+                            <li>12" med</li>
                             <li>16.00</li>
                         </ul>
                     </li>
                     <li>
                         <ul>
-                            <li>16" large</li>
+                            <li>16" lrg</li>
                             <li>22.00</li>
                         </ul>
                     </li>
                     <li>
                         <ul>
-                            <li>20" xlarge</li>
+                            <li>20" xxl</li>
                             <li>27.00</li>
                         </ul>
                     </li>
@@ -235,7 +235,7 @@
 
         </section>        
 
-        <section class="col-1-2 sub-section main-border">
+        <section class="col-1-2 sub-section main-border pizza-specialties">
             <header class="flex-parent border-bottom-3">
                     <div class="header-cell col-1-2 border-right-3 flex-parent">
                         <h3>specialties</h3>
@@ -249,19 +249,19 @@
                             </li>
                             <li>
                                 <ul>
-                                    <li>12" medium</li>
+                                    <li>12" med</li>
                                     <li>16.00</li>
                                 </ul>
                             </li>
                             <li>
                                 <ul>
-                                    <li>16" large</li>
+                                    <li>16" lrg</li>
                                     <li>22.00</li>
                                 </ul>
                             </li>
                             <li>
                                 <ul>
-                                    <li>20" xlarge</li>
+                                    <li>20" xxl</li>
                                     <li>27.00</li>
                                 </ul>
                             </li>
@@ -271,206 +271,206 @@
            
                 <section>
                     <div class="flex-parent">
-                        <div class="col-2-3">
+                        <div class="col-1-2">
                             <h4>the equator</h4>
                         </div>
-                        <ol class="col-1-3 flex-parent item-prices">
+                        <ol class="col-1-2 flex-parent item-prices">
                             <li>3.50</li>
                             <li>11.00</li>
                             <li>15.00</li>
                             <li>20.00</li>
                         </ol>
                     </div>
-                    <p>cheese - marinara </p>
+                    <p class="col-2-3">cheese - marinara </p>
                 </section>
                     <section> <!-- start flavor item-->
                         <div class="flex-parent">
-                            <div class="col-2-3">
+                            <div class="col-1-2">
                                 <h4>the old eastern</h4>
                             </div>
-                            <ol class="col-1-3 flex-parent item-prices">
+                            <ol class="col-1-2 flex-parent item-prices">
                                 <li>3.50</li>
                                 <li>11.00</li>
                                 <li>15.00</li>
                                 <li>20.00</li>
                             </ol>
                         </div>
-                        <p>cheese - marinara </p>
+                        <p class="col-2-3">cheese - marinara </p>
                     </section> <!-- end product line -->
                     <section> <!-- start flavor item-->
                         <div class="flex-parent">
-                            <div class="col-2-3">
+                            <div class="col-1-2">
                                 <h4>the western</h4>
                             </div>
-                            <ol class="col-1-3 flex-parent item-prices">
+                            <ol class="col-1-2 flex-parent item-prices">
                                 <li>4.80</li>
                                 <li>15.00</li>
                                 <li>21.00</li>
                                 <li>25.00</li>
                             </ol>
                         </div>
-                        <p>mushroom - onion - bell pepper -spinach - broccoli - tomato -mozzarella - marinara</p>
+                        <p class="col-2-3">mushroom - onion - bell pepper -spinach - broccoli - tomato -mozzarella - marinara</p>
                     </section> <!-- end product line -->
                     <section> <!-- start flavor item-->
                         <div class="flex-parent">
-                            <div class="col-2-3">
+                            <div class="col-1-2">
                                 <h4>the greek</h4>
                             </div>
-                            <ol class="col-1-3 flex-parent item-prices">
+                            <ol class="col-1-2 flex-parent item-prices">
                                 <li>4.80</li>
                                 <li>15.00</li>
                                 <li>21.00</li>
                                 <li>25.00</li>
                             </ol>
                         </div>
-                        <p>pepperoncini - spinach - black olives - red oniion - bruschetta - feta - parmesan - oil &amp; herbs</p>
+                        <p class="col-2-3">pepperoncini - spinach - black olives - red onion - bruschetta - feta - parmesan - oil &amp; herbs</p>
                     </section> <!-- end product line -->
                     <section> <!-- start flavor item-->
                         <div class="flex-parent">
-                            <div class="col-2-3">
+                            <div class="col-1-2">
                                 <h4>the francais</h4>
                             </div>
-                            <ol class="col-1-3 flex-parent item-prices">
+                            <ol class="col-1-2 flex-parent item-prices">
                                 <li>4.80</li>
                                 <li>15.00</li>
                                 <li>21.00</li>
                                 <li>25.00</li>
                             </ol>
                         </div>
-                        <p>walnut, blue cheese, mozzarala - olive oil</p>
+                        <p class="col-2-3">walnut, blue cheese, mozzarala - olive oil</p>
                     </section> <!-- end product line -->
                     <section> <!-- start flavor item-->
                         <div class="flex-parent">
-                            <div class="col-2-3">
+                            <div class="col-1-2">
                                 <h4>the local</h4>
                             </div>
-                            <ol class="col-1-3 flex-parent item-prices">
+                            <ol class="col-1-2 flex-parent item-prices">
                                 <li>5.10</li>
                                 <li>16.00</li>
                                 <li>22.00</li>
                                 <li>27.00</li>
                             </ol>
                         </div>
-                        <p>bacon - hamburger - peperoni -sausage - mushroom - bell pepper - onion - olive oil - mozzarella - marinara</p>
+                        <p class="col-2-3">bacon - hamburger - peperoni -sausage - mushroom - bell pepper - onion - olive oil - mozzarella - marinara</p>
                     </section> <!-- end product line -->
                     <section> <!-- start flavor item-->
                         <div class="flex-parent">
-                            <div class="col-2-3">
+                            <div class="col-1-2">
                                 <h4>the southern</h4>
                             </div>
-                            <ol class="col-1-3 flex-parent item-prices">
+                            <ol class="col-1-2 flex-parent item-prices">
                                 <li>4.80</li>
                                 <li>15.00</li>
                                 <li>21.00</li>
                                 <li>25.00</li>
                             </ol>
                         </div>
-                        <p>ground turkey - mushroom - artichoke - spinach - onion mozzarella - white sauce</p>
+                        <p class="col-2-3">ground turkey - mushroom - artichoke - spinach - onion mozzarella - white sauce</p>
                     </section> <!-- end product line -->
                     <section> <!-- start flavor item-->
                         <div class="flex-parent">
-                            <div class="col-2-3">
+                            <div class="col-1-2">
                                 <h4>the atantic</h4>
                             </div>
-                            <ol class="col-1-3 flex-parent item-prices">
+                            <ol class="col-1-2 flex-parent item-prices">
                                 <li>4.80</li>
                                 <li>15.00</li>
                                 <li>21.00</li>
                                 <li>25.00</li>
                             </ol>
                         </div>
-                        <p>wgrilled chicken - bacon - potato - broccoli - mozzarela - white sauce</p>
+                        <p class="col-2-3">wgrilled chicken - bacon - potato - broccoli - mozzarela - white sauce</p>
                     </section> <!-- end product line -->
                     <section> <!-- start flavor item-->
                         <div class="flex-parent">
-                            <div class="col-2-3">
+                            <div class="col-1-2">
                                 <h4>the pacific</h4>
                             </div>
-                            <ol class="col-1-3 flex-parent item-prices">
+                            <ol class="col-1-2 flex-parent item-prices">
                                 <li>4.80</li>
                                 <li>15.00</li>
                                 <li>21.00</li>
                                 <li>25.00</li>
                             </ol>
                         </div>
-                        <p>smoked ham - pineapple - bell pepper - cream cheese - mozzarella - marinara</p>
+                        <p class="col-2-3">smoked ham - pineapple - bell pepper - cream cheese - mozzarella - marinara</p>
                     </section> <!-- end product line -->
                     <section> <!-- start flavor item-->
                         <div class="flex-parent">
-                            <div class="col-2-3">
+                            <div class="col-1-2">
                                 <h4>the american</h4>
                             </div>
-                            <ol class="col-1-3 flex-parent item-prices">
+                            <ol class="col-1-2 flex-parent item-prices">
                                 <li>4.80</li>
                                 <li>15.00</li>
                                 <li>21.00</li>
                                 <li>25.00</li>
                             </ol>
                         </div>
-                        <p>chicken - corn - jalapeno - monterey jack - bbq sauce</p>
+                        <p class="col-2-3">chicken - corn - jalapeno - monterey jack - bbq sauce</p>
                     </section> <!-- end product line -->
                     <section> <!-- start flavor item-->
                         <div class="flex-parent">
-                            <div class="col-2-3">
+                            <div class="col-1-2">
                                 <h4>the buffalo</h4>
                             </div>
-                            <ol class="col-1-3 flex-parent item-prices">
+                            <ol class="col-1-2 flex-parent item-prices">
                                 <li>5.10</li>
                                 <li>16.00</li>
                                 <li>22.00</li>
                                 <li>27.00</li>
                             </ol>
                         </div>
-                        <p>chicken, red onion, monterey jack - blue cheese - buffalo sauce</p>
+                        <p class="col-2-3">chicken, red onion, monterey jack - blue cheese - buffalo sauce</p>
                     </section> <!-- end product line -->
                     <section> <!-- start flavor item-->
                         <div class="flex-parent">
-                            <div class="col-2-3">
+                            <div class="col-1-2">
                                 <h4>the milano</h4>
                             </div>
-                            <ol class="col-1-3 flex-parent item-prices">
+                            <ol class="col-1-2 flex-parent item-prices">
                                 <li>4.80</li>
                                 <li>15.00</li>
                                 <li>21.00</li>
                                 <li>25.00</li>
                             </ol>
                         </div>
-                        <p>chicken - caper - onion - spinach - black pepper - mozzarella - parmesan - lemon juice - oil &amp; herbs</p>
+                        <p class="col-2-3">chicken - caper - onion - spinach - black pepper - mozzarella - parmesan - lemon juice - oil &amp; herbs</p>
                     </section> <!-- end product line -->
                     <section> <!-- start flavor item-->
                         <div class="flex-parent">
-                            <div class="col-2-3">
+                            <div class="col-1-2">
                                 <h4>the mediterranean</h4>
                             </div>
-                            <ol class="col-1-3 flex-parent item-prices">
+                            <ol class="col-1-2 flex-parent item-prices">
                                 <li>4.80</li>
                                 <li>15.00</li>
                                 <li>21.00</li>
                                 <li>25.00</li>
                             </ol>
                         </div>
-                        <p>chicken - sun-dried tomato - onion - almond - green olives - feta - pesto</p>
+                        <p class="col-2-3">chicken - sun-dried tomato - onion - almond - green olives - feta - pesto</p>
                     </section> <!-- end product line -->
                     <section> <!-- start flavor item-->
                         <div class="flex-parent">
-                            <div class="col-2-3">
+                            <div class="col-1-2">
                                 <h4>the polynesian</h4>
                             </div>
-                            <ol class="col-1-3 flex-parent item-prices">
+                            <ol class="col-1-2 flex-parent item-prices">
                                 <li>5.10</li>
                                 <li>16.00</li>
                                 <li>22.00</li>
                                 <li>27.00</li>
                             </ol>
                         </div>
-                        <p>bacon - pepperoni - jalapeno - black olive - cranberry - pineapple - cream cheese</p>
+                        <p class="col-2-3">bacon - pepperoni - jalapeno - black olive - cranberry - pineapple - cream cheese</p>
                     </section> <!-- end product line -->
                 </section> <!-- end sub section -->
             </div>
             </section> <!-- end pizza section -->
 
 
-<!--POTATOES POTATOES POTATOES POTATOES POTATOES POTATOES POTATOES -->
+<!--POTATO POTATO POTATO POTATO POTATO POTATO POTATO -->
             <section class="hide" id="potato">
                 <header class="header-lg flex-parent main-border">
                     <div class="flex-parent col-1-1">
@@ -479,11 +479,11 @@
                 </header>
                 <div class="flex-parent flow">
                     <!-- specialty potatoes -->
-                    <section class="col-1-2 sub-section main-border">
+                    <section class="col-1-2 sub-section main-border potato-specialties">
                             <header>
                                  <div class="flex-parent border-bottom-3">   
                                     <div class="header-cell flex-parent col-1-1">
-                                        <h3 class="col-1-1">specialty potatoes</h3>
+                                        <h3>specialty potatoes</h3>
                                     </div>
                                  </div>
                             </header>
@@ -520,11 +520,11 @@
                     </section><!--end specialty potatoes-->
 
                     <!-- international potatoes -->
-                    <section class="col-1-2 sub-section main-border international">
+                    <section class="col-1-2 sub-section main-border potato-international">
                             <header>
                                  <div class="flex-parent border-bottom-3">   
                                     <div class="header-cell col-7-8 border-right-3 flex-parent">
-                                        <h3 class="col-7-8">the international</h3>
+                                        <h3>the international</h3>
                                     </div>
                                     <div class="col-1-8">
                                         <div>
@@ -565,7 +565,7 @@
                 </div>
                 </section>
     
-
+<!-- SALAD SALAD SALAD SALAD SALAD SALAD SALAD SALAD SALAD SALAD SALAD -->
             <section class="hide" id="salad">
                 <header class="header-lg flex-parent main-border">
                     <div class="flex-parent col-1-1">
@@ -574,11 +574,11 @@
                 </header>
                 <div class="flex-parent flow">
                     <!-- specialty salads -->
-                    <section class="col-1-2 sub-section main-border"> 
+                    <section class="col-1-2 sub-section main-border salad-specialties"> 
                         <header>
                              <div class="flex-parent border-bottom-3">   
                                 <div class="header-cell border-right-3 flex-parent col-7-8">
-                                    <h3 class="col-1-1">specialty salads</h3>
+                                    <h3>specialty salads</h3>
                                 </div>
                                 <div class="col-1-8"></div>
                              </div>
@@ -620,11 +620,11 @@
                     </section>
 
                     <!-- international salads -->
-                    <section class="col-1-2 sub-section main-border international">
+                    <section class="col-1-2 sub-section main-border salad-international">
                             <header>
                                  <div class="flex-parent border-bottom-3">   
                                     <div class="header-cell col-7-8 border-right-3 flex-parent">
-                                        <h3 class="col-7-8">the international</h3>
+                                        <h3>the international</h3>
                                     </div>
                                     <div class="col-1-8">
                                         <div>
@@ -675,11 +675,11 @@
 
         <div class="flex-parent flow">
             <!-- start pizza kid's meal -->
-            <section class="col-1-2 sub-section main-border">
+            <section class="col-1-2 sub-section main-border kids-pizza-specials">
                 <header>
                     <div class="flex-parent border-bottom-3">
                         <div class="header-cell col-2-3 border-right-3 flex-parent">
-                            <h3 class="col-1-1">pizza kid's meal</h3>
+                            <h3>pizza kid's meal</h3>
                         </div>
                         <div class="col-1-3 italic-cell">
                             <div>
@@ -694,13 +694,13 @@
                         <section class="flex-parent">
                             <h4>specialty slice</h4>
                             <p>choose any slice</p>
-                            <ol><li>4.00</li></ol>
+                            <ol class="item-prices"><li>4.00</li></ol>
                         </section>
 
                         <section class="flex-parent">
                             <h4>the international</h4>
                             <p>build your own</p>
-                            <ol><li>4.00</li></ol>
+                            <ol class="item-prices"><li>4.00</li></ol>
                         </section>
                     </div>
 
@@ -711,12 +711,12 @@
             </section><!-- end pizza kid's meal -->
 
             <!--start specialty slices for kid's menu-->
-            <section class="col-1-2 sub-section main-border">
+            <section class="col-1-2 sub-section main-border kids-pizza-specialties">
                 <header class="flex-parent border-bottom-3">
                         <div class="header-cell col-7-8 border-right-3 flex-parent">
                             <h3>specialty slices</h3>
                         </div>
-                        <div class="col-1-8">
+                        <div class="col-1-8 flex-parent">
                             <img src="img/slice.png" alt="">
                         </div>
                 </header>
@@ -791,11 +791,11 @@
             <!--end specialty slices-->
 
             <!-- start potato kid's meal -->
-            <section class="col-1-2 sub-section main-border">
+            <section class="col-1-2 sub-section main-border kids-potato-specials">
                 <header>
                     <div class="flex-parent border-bottom-3">
                         <div class="header-cell col-2-3 border-right-3 flex-parent">
-                            <h3 class="col-1-1">potato kid's meal</h3>
+                            <h3>potato kid's meal</h3>
                         </div>
                         <div class="col-1-3 italic-cell">
                             <div>
@@ -810,13 +810,13 @@
                         <section class="flex-parent">
                             <h4>specialty potato</h4>
                             <p>choose any potato</p>
-                            <ol><li>4.00</li></ol>
+                            <ol class="item-prices"><li>4.00</li></ol>
                         </section>
 
                         <section class="flex-parent">
                             <h4>the international</h4>
                             <p>build your own</p>
-                            <ol><li>4.00</li></ol>
+                            <ol class="item-prices"><li>4.00</li></ol>
                         </section>
                     </div>
 
@@ -828,7 +828,7 @@
 
 
             <!--start specialty potatoes for kid's menu-->
-            <section class="col-1-2 sub-section main-border">
+            <section class="col-1-2 sub-section main-border kids-potato-specialties">
                 <header class="flex-parent border-bottom-3">
                         <div class="header-cell col-7-8 border-right-3 flex-parent">
                             <h3>specialty potatoes</h3>
@@ -854,7 +854,7 @@
 
 
             <!--start international potatoes for kid's menu-->
-            <section class="col-1-2 sub-section main-border">
+            <section class="col-1-2 sub-section main-border kids-potato-international">
                 <header>
                     <div class="flex-parent border-bottom-3">
                         <div class="header-cell col-7-8 border-right-3 flex-parent">
@@ -893,6 +893,87 @@
 
 
 
+        </div>
+    </section>
+
+
+<!-- HOURS HOURS HOURS HOURS HOURS HOURS HOURS HOURS HOURS HOURS -->
+
+    <section class="hide" id="hours">
+        <header class="header-lg flex-parent main-border">
+            <div class="flex-parent col-1-1">
+                <h2>HOURS</h2>
+            </div>
+        </header>
+        <div class="flex-parent flow">
+            <!-- specialty salads -->
+            <section class="col-1-2 sub-section main-border"> 
+                <header>
+                    <div class="flex-parent border-bottom-3">   
+                       <div class="header-cell border-right-3 flex-parent col-7-8">
+                           <h3>hours of operation</h3>
+                       </div>
+                       <div class="col-1-8 flex-parent"><img src="" alt=""></div>
+                    </div>
+                </header>
+
+                <section class="flex-parent">
+                    <h4>Monday</h4>
+                    <ol class="flex-parent">
+                        <li>11:00am</li>
+                        <li>—</li>
+                        <li>12:00am</li>
+                    </ol>
+                </section>
+                <section class="flex-parent">
+                    <h4>Tuesday</h4>
+                    <ol class="flex-parent">
+                        <li>11:00am</li>
+                        <li>—</li>
+                        <li>12:00am</li>
+                    </ol>
+                </section>
+                <section class="flex-parent">
+                    <h4>Wednesday</h4>
+                    <ol class="flex-parent">
+                        <li>11:00am</li>
+                        <li>—</li>
+                        <li>12:00am</li>
+                    </ol>
+                </section>
+                <section class="flex-parent">
+                    <h4>Thursday</h4>
+                    <ol class="flex-parent">
+                        <li>11:00am</li>
+                        <li>—</li>
+                        <li>12:00am</li>
+                    </ol>
+                </section>
+                <section class="flex-parent">
+                    <h4>Friday</h4>
+                    <ol class="flex-parent">
+                        <li>11:00am</li>
+                        <li>—</li>
+                        <li>1:00am</li>
+                    </ol>
+                </section>
+                <section class="flex-parent"">
+                    <h4>Saturday</h4>
+                    <ol class="flex-parent">
+                        <li>11:00am</li>
+                        <li>—</li>
+                        <li>1:00am</li>
+                    </ol>
+                </section>
+                <section class="flex-parent">
+                    <h4>Sunday</h4>
+                    <ol class="flex-parent">
+                        <li>12:00pm</li>
+                        <li>—</li>
+                        <li>9:00pm</li>
+                    </ol>
+                </section>
+            </section>
         </div>
     </section>
 

@@ -70,7 +70,8 @@ h2, h3 {
 
 h3 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 2.4rem;
+/*  font-size: 2.4rem;*/
+  font-size: 2vw;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 500;
@@ -81,7 +82,8 @@ h3 {
 
 h4 {
   font-family: 'Raleway', sans-serif;
-  font-size: 1.6rem;
+ /* font-size: 1.6rem;*/
+  font-size: 1.15vw;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -122,10 +124,14 @@ body {
   margin: 0 10px;
 }*/
 
-.sub-section p span {
-  font-family: 'Montserrat', sans-serif;
-}
 
+#hours ol, .item-prices {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1vw;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.25px;
+}
 
 
 /* 1.3 - Buttons */
@@ -166,7 +172,11 @@ section ul li, section ol li {
 }
 .sub-section header ul li:last-of-type {
   border-right: none;
-  }
+ }
+
+#hours .flex-parent {
+  justify-content: space-between;
+}
 
 /* 1.6 - Nav Typography */
 .main-menu {
@@ -237,20 +247,26 @@ h1 div {
 /* 3.2 - Sub Menu */
 
 .main-menu li.sub-menu {
-  width: 90%;
-  height: 100%;
+  width: 90%;/*
+  height: 100%;*/
   padding: 0;
   background-color: #f0f0f0;
   border-left: 3px solid #383838;
+  align-self: flex-end;
+  border-bottom: 0;
 }
 
-.sub-menu ul {
+.main-menu>li:nth-of-type(3) {
+  border-top: 3px solid #383838;
+}
+
+/*.sub-menu ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: space-between;
   width: 100%;
-}
+}*/
 
 .sub-menu li {
   border-bottom: 1px solid #383838;
@@ -264,10 +280,14 @@ h1 div {
 
 
 /* 3.3 - Footer Menu */
-footer ul {
+footer {
   height: 18%;
-  flex-direction: column;
-  justify-content: space-around;
+  background-color: #f0f0f0;
+  align-items: flex-start;
+  padding-top: 20%;
+}
+/*  flex-direction: column;
+  justify-content: space-around;*/
 }
 /*flex isn't working on footer ul*/
 footer li {
@@ -356,24 +376,63 @@ footer li {
     padding: 0px 10px;
 }
 
-.specials section {
+.pizza-specials section, .kids-pizza-specials section, .kids-potato-specials section {
   justify-content: space-between;
 }
 
-.sub-section header ol {
 
+#pizza .flow, #kids .flow {
+  flex-flow: column wrap;
+  align-content: space-between;
 }
 
+#pizza .flow {
+  max-height: 1200px;
+} /*is there a more responsive way to do this?
+seems like it will break on different resolutions?*/
+
+.sub-section {
+  height: 100%;
+}
+/*this keeps the sub section from growing to equal height
+of column next to it*/
+
+#kids .flow {
+  max-height: 1440px;
+}
+
+/*#kids .sub-section {
+  min-width: 48%;
+}*/
+
+#potato .flow, #salad .flow {
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.potato-specialties {
+  height: 100%;
+}
 
 
 /* 3.3 - Section Name */
 /*--------------------------------------------------------------
 4.0 - Media
 -------------------------------------------------------------- */
-.sub-section:first-of-type img {
-  width: 68px;
-  height: 68px;
-  margin: 0 auto;
+.pizza-specials .col-1-6, .kids-pizza-specials .col-1-6, .kids-pizza-specialties .col-1-8, #hours .col-1-8 {
+  align-items: center;
+  justify-content: center;
+}
+
+.pizza-specials .col-1-6 img, .kids-pizza-specials .col-1-6 img {
+  width: 100%;
+  max-width: 69px;
+}
+
+#hours .col-1-8 img, .kids-pizza-specialties img {
+  width: 100%;
+  max-width: 29px;
+  /*update this to size of clock image*/
 }
 
 
@@ -423,12 +482,12 @@ body {
 .block > * {
   display: block;
 }
-.flow {
+/*.flow {
   flex-flow: column wrap;
   max-height: 2000px;
   width: 100%;
   align-content: space-between;
-}
+}*/
 /*this doesn't work anymore?*/
 
 .flow .sub-section.col-1-2 {
