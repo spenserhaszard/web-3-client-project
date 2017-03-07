@@ -59,7 +59,7 @@ Black = 900
 1.0 - TYPOGRAPHY
 -------------------------------------------------------------- */
 html {
-  font-size: 10px; 
+  font-size: 1vw; 
   color: #383838;
 }
 
@@ -68,22 +68,53 @@ h2, h3 {
   text-align: center;
 }
 
+.header-cell {
+  /*background-image: url(../img/lines.png);*/
+  background-color: #383838;
+  background-repeat: repeat;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+}
+
 h3 {
   font-family: 'Montserrat', sans-serif;
-/*  font-size: 2.4rem;*/
-  font-size: 2vw;
+  font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 500;
-  background-color: #383838;
   color: #f0f0f0;
   padding: 5px;
+  background-color: #383838
+ }
+ 
+ h3 { 
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-section header .col-1-8 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}
+
+.sub-section header .col-1-8 p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 h4 {
   font-family: 'Raleway', sans-serif;
- /* font-size: 1.6rem;*/
-  font-size: 1.15vw;
+  font-size: 1.15rem;
+/*  font-size: 1.15vw;*/
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -92,18 +123,12 @@ h4 {
   font-style: italic;
   font-weight: 300;
   font-family: 'Merriweather', serif;
-  font-size: 2rem;
-  letter-spacing: -1px;
+  font-size: 1.7rem;
+  letter-spacing: -.5px;
+  align-items:center;
+  padding: 5px;
 }
 
-.sub-section header .col-1-8 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.3rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding: 4px;
-  text-align: center;
-}
 
 /* 1.2 - Body Copy */
 body {
@@ -116,8 +141,9 @@ body {
 }
 
 .sub-section section p {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: 400;
+  line-height: 1.15;
 }
 
 /*.sub-section:first-of-type section p {
@@ -127,7 +153,7 @@ body {
 
 #hours ol, .item-prices {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1vw;
+  font-size: 1rem;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.25px;
@@ -148,61 +174,40 @@ a {
 .sub-section section ol {
   justify-content: space-around;
 }
-.sub-section header ul, .sub-section header ol {
+.sub-section header ol {
   justify-content: space-around;
+/*  align-items: center;*/
+  padding: 0;
 }
 
-.sub-section header ul ul li {
-  font-size: 1.4rem;
+.sub-section header ol ol {
+  font-size: 1rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
+  padding: 5px;
 }
 
-.sub-section header ul ul li:last-child {
+.sub-section header ol ol li:last-child {
   font-weight: 700;
 }
 
-section ul li, section ol li {
+section ol li {
   text-align: center;
 }
-.sub-section header > ul > li {
+.sub-section header > ol > li {
     border-right: 3px solid #383838;
-    padding-right: 3%;
+    flex-basis: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.sub-section header ul li:last-of-type {
+.sub-section header ol li:last-of-type {
   border-right: none;
 }
 
 #hours .flex-parent {
   justify-content: space-between;
-}
-
-/* 1.6 - Nav Typography */
-.main-menu {
-  font-size: 2.3rem;
-  font-family: 'Roboto slab', sans-serif;
-}
-
-.sub-menu {
-  font-family: "Montserrat";
-  font-size: 1.0rem;
-}
-
-nav, nav a {
-  color: #383838;
-}
-
-.sub-menu a {
-  padding: 12px;
-  display: block;
-}
-nav a:active {
-  background-color: #feba13;
-}
-nav a:hover {
-  background-color: #383838;
-  color: #f0f0f0;
 }
 
 
@@ -218,7 +223,6 @@ nav {
 }
 
 h1 img {
-  width: 135px;
   width: 80%;
   max-width: 135px;
 }
@@ -231,18 +235,48 @@ h1 {
 
 h1 div {
   min-height: 30%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
 }
+
+nav, nav a {
+  color: #383838;
+}
+
+nav a {
+  display: block;
+}
+
+.sub-menu li {
+  padding: 8px;
+}
+
+nav a:active {
+  background-color: #feba13;
+}
+nav a:hover {
+  background-color: #383838;
+  color: #f0f0f0;
+}
+
+
 /* 3.1 - Main Menu */
 .main-menu {
   height: 64%;
   background-image: url(../img/speckles.png);
   background-repeat: repeat;
   flex-direction: column;
+  font-size: 2.3rem;
+  font-family: 'Roboto slab', sans-serif;
 }
 
 .main-menu>li {
   flex-basis: 15%;
   padding: 13px 6px;
+  display: flex;
+  align-items: center;
 }
 
 .main-menu >.sub-menu {
@@ -250,6 +284,10 @@ h1 div {
 }
 
 /* 3.2 - Sub Menu */
+.sub-menu {
+  font-family: "Montserrat";
+  font-size: 1.0rem;
+}
 
 .main-menu li.sub-menu {
   width: 90%;/*
@@ -265,13 +303,12 @@ h1 div {
   border-top: 3px solid #383838;
 }
 
-/*.sub-menu ul {
+.sub-menu ul {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: space-between;
-  width: 100%;
-}*/
+  justify-content: space-around;
+  height: 100%;
+}
 
 .sub-menu li {
   border-bottom: 1px solid #383838;
@@ -290,6 +327,7 @@ footer {
   background-color: #f0f0f0;
   align-items: flex-start;
   padding-top: 20%;
+  flex-basis: ;
 }
 /*  flex-direction: column;
   justify-content: space-around;*/
@@ -377,7 +415,7 @@ footer li {
   padding: 5px 10px;
 }*/
 
- .italic-cell, header .col-1-8, header ol, header ul {
+header .col-1-8 {
   padding: 0 10px;
 }
 
@@ -386,31 +424,11 @@ footer li {
 }
 
 
-#pizza .flow, #kids .flow {
-  flex-flow: column wrap;
-  align-content: space-between;
-}
-
-#pizza .flow {
-  max-height: 1200px;
-} 
-
-/*is there a more responsive way to do this?
-seems like it will break on different resolutions?*/
-
-.sub-section {
+/*.sub-section {
   height: 100%;
-}
+}*/
 /*this keeps the sub section from growing to equal height
 of column next to it*/
-
-#kids .flow {
-  max-height: 1440px;
-}
-
-/*#kids .sub-section {
-  min-width: 48%;
-}*/
 
 #potato .flow, #salad .flow {
   flex-flow: row nowrap;
@@ -422,6 +440,7 @@ of column next to it*/
 }
 .content-wrapper {
   justify-content: space-between;
+  padding-bottom: 20px;
 }
 .content-wrapper > .col-1-2 {
   width: 49%;
@@ -449,6 +468,7 @@ of column next to it*/
 }
 
 
+
 /*--------------------------------------------------------------
 5.0 - Utility
 -------------------------------------------------------------- */
@@ -457,24 +477,15 @@ of column next to it*/
   background-color: orange;
 }
 
-.header-cell {
-  background-image: url(../img/lines.png);
-  background-repeat: repeat;
-  justify-content: center;
-  align-items: center;
-  padding: 8px;
-}
-
-h3 {
-  width: 100%;
-  background-color: #383838;
-}
-
 body {
   background-image: url(../img/dots.png);
   background-repeat: repeat;
   background-size: 15px;
   position: relative;
+}
+
+.sub-section header .col-1-8, .italic-cell, header>ol {
+  background: url(../img/speckles.png) repeat;
 }
 
 /* 5.2 - Text Colors */
@@ -591,24 +602,56 @@ body {
       5.4 - Alignments
     --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
-  .sub-section.col-1-2 {
+  
+  html {
+    font-size: 2vw;
+  }
+
+  h3 {
+    font-size: 2vh;
+    justify-content: flex-start;
+  }
+
+
+
+ /*--------------------------------------------------------------
+    2.0 - T A B L E T   N A V I G A T I O N
+    -------------------------------------------------------------- */
+  nav.flex-parent {
+    display: none;
+  }
+
+
+
+
+
+ /*--------------------------------------------------------------
+    3.0 - T A B L E T   S T R U C T U R E
+    -------------------------------------------------------------- */
+   .header-lg {
+    height: 10vh;
+  }
+
+  .sub-section.col-1-2, .content-wrapper>.col-1-2 {
     width: 100%;
   }
-  .content-wrapper > .col-1-2 {
-    width: 100%;
+
+  .content-wrapper {
     display: block;
   }
-}
+
+  main.col-7-8 {
+    width: 100%;
+  }
+}/* end tablet media query */
 
 @media screen and (max-width: 480px) {
-
-
-
-
-
     /*--------------------------------------------------------------
     1.0 - M O B I L E  T Y P O G R A P H Y
     -------------------------------------------------------------- */
+    html {
+      font-size: 2.5vw;
+    }
 
     .col-1-2 {
       width: 100%;
@@ -631,7 +674,7 @@ body {
     -------------------------------------------------------------- */
 
     /*--N A V  B U T T O N --*/
-    .btn {
+    /*.btn {
       text-transform: uppercase;
       font-size: 2rem;
       font-family: 'Montserrat', sans-serif;
@@ -666,9 +709,9 @@ body {
       position: absolute;
       z-index: 2;
     }
+*/
 
 
 
 
-
-}
+}/* end mobile media query */
