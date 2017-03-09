@@ -605,6 +605,18 @@ body {
   0% {opacity: 0;}
   100% {opacity: 1;}
 }
+.rotating {
+    animation: rotating 10s linear infinite;
+    transform-origin: 49% 50%;
+}
+@keyframes rotating {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
 
 /*--------------------------------------------------------------
 7.0 media query
