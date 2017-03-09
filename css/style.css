@@ -87,7 +87,11 @@ h3 {
   padding: 5px;
   background-color: #383838
  }
- 
+ h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+ }
  h3 { 
   width: 100%;
   height: 100%;
@@ -522,6 +526,8 @@ figcaption li span {
 
 .contact a img {
   margin-right: 15px;
+  max-width: 25px;
+  idth: 2vw;
 }
 
 
@@ -617,15 +623,20 @@ body {
 .hide {
   display: none;
   transition: all 0.5s ease;
+  animation: bkhide 2s;
 }
 
 
 .show {
   display: block;
-  animation: bkgchange 1s;
+  animation: bkgchange 2s;
 }
 
 @keyframes bkgchange {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes bkhide {
   0% {opacity: 0;}
   100% {opacity: 1;}
 }
