@@ -111,13 +111,20 @@ h3 {
   text-align: center;
 }
 
-h4, #contact li {
+h4 {
   font-family: 'Raleway', sans-serif;
   font-size: 1.15rem;
 /*  font-size: 1.15vw;*/
   text-transform: uppercase;
   font-weight: 700;
 }
+
+ #about .sub-section section p {
+  font-family: 'montserrat', sans-serif;
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  font-weight: 400;
+ }
 
 .italic-cell {
   font-style: italic;
@@ -152,7 +159,7 @@ body {
 }*/
 
 
-#hours ol, .item-prices {
+.item-prices, .hours ol {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -440,20 +447,23 @@ of column next to it*/
   height: 100%;
 }
 
-#hours .content-wrapper {
-  justify-content: center;
+.contact>div.flex-parent{
+  flex-direction: column;
+} 
+
+.contact>div.flex-parent>section {
+  border-bottom: 3px solid #383838;
 }
 
-#hours section .flex-parent {
+.hours section {
   justify-content: space-between;
 }
 
 
-/* 3.3 - Section Name */
 /*--------------------------------------------------------------
 4.0 - Media
 -------------------------------------------------------------- */
-.pizza-specials .col-1-6, .kids-pizza-specials .col-1-6, .kids-pizza-specialties .col-1-8, #hours .col-1-8 {
+.pizza-specials .col-1-6, .kids-pizza-specials .col-1-6, .kids-pizza-specialties .col-1-8 {
   align-items: center;
   justify-content: center;
 }
@@ -463,13 +473,13 @@ of column next to it*/
   max-width: 69px;
 }
 
-#hours .col-1-8 img, .kids-pizza-specialties img {
+.kids-pizza-specialties img {
   width: 100%;
   max-width: 29px;
   /*update this to size of clock image*/
 }
 
-figure {
+/*figure {
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
@@ -500,6 +510,20 @@ figcaption li span {
   border-right: 1px solid #383838;
   padding: 5px;
 }
+*/
+
+.contact a>div {
+  background-image: url(../img/map-lg.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 200px;
+  height: ;
+}
+
+.contact a img {
+  margin-right: 15px;
+}
+
 
 /*--------------------------------------------------------------
 5.0 - Utility
