@@ -462,7 +462,24 @@ of column next to it*/
 .hours section {
   justify-content: space-between;
 }
+.about {
+  padding: 18px;
+  margin: 0 auto;
+  text-align: center;
+}
+.about a {
+  border: 3px solid #383838;
+  padding: 10px;
+  font-size: 2rem;
+  font-family: 'Roboto slab', sans-serif;
 
+}
+.about a:hover {
+  color: #383838;
+}
+#landing {
+  display: flex;
+}
 
 /*--------------------------------------------------------------
 4.0 - Media
