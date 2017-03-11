@@ -69,9 +69,10 @@ h2, h3 {
 }
 
 .header-cell {
-  background-image: url(../img/lines.png);
+/*  background-image: url(../img/lines.png);
+  background-size: 65px;
+  background-repeat: repeat;*/
 /*  background-color: #383838;*/
-  background-repeat: repeat;
   justify-content: center;
   align-items: center;
   padding: 4px;
@@ -109,10 +110,15 @@ h3 {
 
 .sub-section header .col-1-8 p {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  color: #f0f0f0;
+  background-color: #383838;
+  width: 100%;
+  height: 100%;
+  padding: 4px;
 }
 
 h4 {
@@ -134,10 +140,13 @@ h4 {
   font-style: italic;
   font-weight: 300;
   font-family: 'Merriweather', serif;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   letter-spacing: -.5px;
-  align-items:center;
   padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 
@@ -151,25 +160,17 @@ body {
   min-height: 718px;
 }
 
-
 .sub-section section p {
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.15;
 }
 
-/*.sub-section:first-of-type section p {
-  margin: 0 10px;
-}*/
-
-
-.item-prices, .hours ol {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.25px;
+#salad span {
+  text-align: right;
+  padding-right: 8px;
 }
+
 
 
 /* 1.3 - Buttons */
@@ -184,40 +185,64 @@ a {
 
 /* 1.4 - Forms */
 /* 1.5 - Lists */
+.item-prices, .hours ol, #salad span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.25px;
+}
+
+
 .sub-section section ol {
   justify-content: space-around;
 }
 .sub-section header ol {
   justify-content: space-around;
-/*  align-items: center;*/
   padding: 0;
 }
 
 .sub-section header ol ol {
+  padding: 5px;
+}
+
+.header-list {
   font-size: 1rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  padding: 5px;
 }
 
-.sub-section header ol ol li:last-child {
+.sub-section header ol ol li:last-child, #bread .header-list, .potato-international .header-list {
   font-weight: 700;
 }
 
 section ol li {
   text-align: center;
 }
-.sub-section header > ol > li {
-    border-right: 3px solid #383838;
+
+.header-list>li, .potato-international .header-list {
+    border-right: 1px solid #383838;
     flex-basis: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.sub-section header ol li:last-of-type {
+
+.header-list>li:last-of-type {
   border-right: none;
 }
+
+.pizza-specialties .header-list>li {
+  align-items: flex-end;
+}
+
+#bread .header-list li {
+  flex-basis: 50%;
+}
+
+
+
 
 
 
@@ -491,60 +516,30 @@ of column next to it*/
 
 .pizza-specials .col-1-6 img, .kids-pizza-specials .col-1-6 img {
   width: 100%;
-  max-width: 69px;
+  max-width: 57px;
+}
+
+.pizza-specialties img {
+  width: 15px;
 }
 
 .kids-pizza-specialties img {
   width: 100%;
   max-width: 29px;
-  /*update this to size of clock image*/
 }
 
-/*figure {
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-  height: 50vh;
-}
-
-figure>a {
-  height: 90%;
-  background-image: url(../img/map-lg.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-figcaption {
-  height: 10%;
-}
-
-figcaption ul {
-  justify-content: space-between;
-  background-color: #f0f0f0;
-}
-
-figcaption li {
-  padding: 10px;
-}
-
-figcaption li span {
-  border-right: 1px solid #383838;
-  padding: 5px;
-}
-*/
 
 .contact a>div {
   background-image: url(../img/map-lg.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 200px;
-  height: ;
 }
 
 .contact a img {
   margin-right: 15px;
   max-width: 25px;
-  idth: 2vw;
+  width: 2vw;
 }
 
 
@@ -563,8 +558,14 @@ body {
   position: relative;
 }
 
-.sub-section header .col-1-8, .italic-cell, header>ol {
+.sub-section header .col-1-8, .italic-cell, header ol {
   background: url(../img/speckles.png) repeat;
+  background-size: 15px;
+}
+
+.pizza-international header .col-1-8, .kids-international header .col-1-8 {
+  background-image: none;
+  padding: 4px;
 }
 
 /* 5.2 - Text Colors */
@@ -572,6 +573,10 @@ body {
 /* 5.4 - Alignments */
 .flex-parent {
   display: flex;
+}
+
+.flex-end {
+  align-items: flex-end;
 }
 
 .align-items-center {
@@ -600,7 +605,7 @@ body {
 .main-border {
   border-color: #383838;
   border-style: solid;
-  border-width: 3px 8px;
+  border-width: 5px 5px;
   background-color: #f0f0f0;
 }
 
@@ -658,7 +663,7 @@ body {
   100% {opacity: 1;}
 }
 .rotating {
-    animation: rotating 10s linear infinite;
+    animation: rotating 35s linear infinite;
     transform-origin: 49% 50%;
 }
 @keyframes rotating {
