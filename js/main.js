@@ -11,18 +11,10 @@ $(document).ready(function(){
 	  })
 
 
-
-	  $("#mobile-menu-btn").on("click", function() {
-	    $("nav").removeClass('minimize');
-	    $("nav").addClass("maximize");
-	    $("#mobile-menu-btn").addClass("minimize");
-	  })
-
-	  $(".sub-menu a").on("click", function() {
-	  	$("nav").removeClass('maximize');
-	    $("nav").addClass("minimize");
-	    $("#mobile-menu-btn").addClass("maximize");
-	  })
+	  $('#menu-li').click( function() {
+	      $(".sub-menu").toggleClass("drop-down");
+	      $("#arrow").toggleClass("animate");
+	  } );
 
 
 

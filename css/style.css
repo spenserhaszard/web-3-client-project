@@ -88,11 +88,16 @@ h3 {
   padding: 5px;
   background-color: #383838
  }
- h2 {
+
+h2 {
+  display: none;
+}
+
+/* h2 {
   font-size: 3rem;
   text-transform: uppercase;
   font-weight: 700;
- }
+ }*/
  h3 { 
   width: 100%;
   height: 100%;
@@ -153,11 +158,10 @@ h4 {
 /* 1.2 - Body Copy */
 body {
   font-family: 'Raleway', sans-serif;
-  padding: 20px;
   background-color: #f0f0f0;
   justify-content: space-between;
-  height: 100vh;
-  min-height: 718px;
+/*  height: 100vh;
+  min-height: 718px;*/
 }
 
 .sub-section section p {
@@ -250,128 +254,125 @@ section ol li {
 2.0 - Navigation Menus
 -------------------------------------------------------------- */
 nav {
-  min-width: 140px;
-/*  position: fixed;*/
-  margin-right: 20px;
+  width: 90vw;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
   flex-direction: column;
-  overflow: hidden;
+  flex: 1 1 90%;
+  border: 3px solid #383838;
 }
 
-h1 img {
-  width: 80%;
-  max-width: 135px;
+nav ul {
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  flex: 1 1 auto;
+  flex-wrap: wrap;
 }
 
-h1 {
-  height: 18%;
-  justify-content: center;
-  border-bottom: 3px solid #383838;
-}
-
-h1 div {
-  min-height: 30%;
-  align-items: center;
+nav li {
+  list-style-type: none;
   display: flex;
+  align-items: center;
   justify-content: center;
-
+  text-align: center;
+  flex: 1 0 auto;
 }
 
-nav, nav a {
-  color: #383838;
-}
-
-nav a {
-  display: block;
-}
-
-.sub-menu li {
+.logo {
+  flex: 1 1 10%;
   padding: 8px;
 }
 
-nav a:active {
-  background-color: #feba13;
+.logo img {
+  max-height: 30px;
 }
+
+.active {
+  background-color: orange;
+}
+
+nav a {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  padding: 10px 0;
+  align-items: center;
+}
+
 nav a:hover {
   background-color: #383838;
   color: #f0f0f0;
 }
 
+nav img:hover {
+  mix-blend-mode: overlay;
+}
 
 /* 3.1 - Main Menu */
 .main-menu {
-  height: 64%;
-  background-image: url(../img/speckles.png);
-  background-repeat: repeat;
-  flex-direction: column;
-  font-size: 2.3rem;
-  font-family: 'Roboto slab', sans-serif;
-}
-
-.main-menu>li {
-  flex-basis: 15%;
-  padding: 13px 6px;
-  display: flex;
-  align-items: center;
-}
-
-.main-menu >.sub-menu {
-  flex-basis: 40%;
-}
-
-/* 3.2 - Sub Menu */
-.sub-menu {
-  font-family: "Montserrat";
-  font-size: 1.0rem;
-}
-
-.main-menu li.sub-menu {
-  width: 90%;/*
-  height: 100%;*/
-  padding: 0;
+  flex: 1 1 auto;
+  height: 55%;
   background-color: #f0f0f0;
-  border-left: 3px solid #383838;
-  align-self: flex-end;
-  border-bottom: 0;
 }
 
-.main-menu>li:nth-of-type(3) {
+.main-menu li {
+  flex-basis: 33.33%;
+}
+
+#arrow {
+  width: 20px;
+  height: 20px;
+  margin-left: 40px;
+  background: url(../img/arrow.png) center no-repeat;
+  background-size: contain;
+}
+
+#arrow:hover {
+  background: url(../img/arrow-black.png) center no-repeat;
+ background-size: contain; 
+}
+
+.animate {
+  transform: rotate(180deg);
+}
+
+/* 3.3 - Sub Menu */
+.sub-menu {
+  display: flex;
+  background-color: #f0f0f0;
   border-top: 3px solid #383838;
 }
 
-.sub-menu ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 100%;
-}
-
 .sub-menu li {
-  border-bottom: 1px solid #383838;
+  border-right: 1px solid #383838;
 }
+
 .sub-menu li:last-of-type {
-  border-bottom: none;
+  border-right: 0;
 }
 
-
-/* 3.3 - Footer Menu */
-footer {
-  height: 18%;
-  background-color: #f0f0f0;
-  align-items: flex-start;
-  padding-top: 20%;
-  flex-basis: ;
+.drop-down {
+  display: none;
 }
-/*  flex-direction: column;
-  justify-content: space-around;*/
 
-/*flex isn't working on footer ul*/
-footer li {
-  padding: 5px 0;
-}
 /*--------------------------------------------------------------
 3.0 - Content
 -------------------------------------------------------------- */
 /* 3.1 - Structure (Widths) */
+main>section {
+  margin-top: 100px;
+}
+
+
+main {
+  width: 90vw;
+}
 
 .col-1-1 {
   width: 100%;
@@ -556,9 +557,11 @@ body {
   background-repeat: repeat;
   background-size: 15px;
   position: relative;
+  flex-direction: column;
+  align-items: center;
 }
 
-.sub-section header .col-1-8, .italic-cell, header ol {
+.logo, .sub-section header .col-1-8, .italic-cell, header ol, .sub-menu li {
   background: url(../img/speckles.png) repeat;
   background-size: 15px;
 }
@@ -623,9 +626,6 @@ body {
   border-bottom: 3px solid #383838;;
 }*/
 
-.main-menu>li {
-  border-bottom: 3px solid #383838;
-}
 
 .sub-section section {
   border-bottom: 1px solid #383838;
@@ -719,8 +719,20 @@ body {
  /*--------------------------------------------------------------
     2.0 - T A B L E T   N A V I G A T I O N
     -------------------------------------------------------------- */
-  nav.flex-parent {
+   nav {
+     width: 90vw;
+   }
+
+   .logo, .container {
+      height: 65px;
+  }
+  
+  .sub-menu {
     display: none;
+  }
+
+  .drop-down {
+    display: flex;
   }
 
 
@@ -742,8 +754,8 @@ body {
     display: block;
   }
 
-  main.col-7-8 {
-    width: 100%;
+  main {
+    width: 90vw;
   }
 }/* end tablet media query */
 
@@ -774,45 +786,60 @@ body {
     /*--------------------------------------------------------------
     2.0 - M O B I L E  N A V I G A T I O N
     -------------------------------------------------------------- */
-
-    /*--N A V  B U T T O N --*/
-    /*.btn {
-      text-transform: uppercase;
-      font-size: 2rem;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 400;
-      color: #383838;
-
+    .container.flex-parent {
       display: inline-block;
-      padding: 5px 10px;
-      background-color: #feba13;
+    }
+
+    .container {
+      border: 0;
+    }
+
+    .main-menu {
+      height: 100%;
       border: 3px solid #383838;
-
-      position: absolute;
-
-      transform: rotate(90deg) translateX(27px) translateY(48px);
     }
 
-    .btn:hover {
-      background-color: #383838;
-      color: #f0f0f0;
-    }
-
-
-    .minimize {
-      display: none;
-    }
-
-    .maximize {
+   .drop-down {
       display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      width: 33.33%; 
     }
 
-    nav.maximize {
-      position: absolute;
-      z-index: 2;
+    .sub-menu {
+      border: 3px solid #383838;
+      border-top: 0;
+      margin-left: 0;
+      padding-left: 0;
     }
-*/
 
+    .sub-menu li {
+      border-bottom: 1px solid #383838;
+      border-right: 0;
+    }
+
+    .sub-menu li:last-of-type {
+      border-bottom: 0;
+    }
+
+    #arrow {
+      margin-left: 20px;
+      width: 18px;
+      height: 18px;
+    }
+
+    /*--------------------------------------------------------------
+    3.0 - M O B I L E  S T R U C T U R E 
+    -------------------------------------------------------------- */
+    .mobile-toggle {
+      background-color: orange;
+      padding: 10px;
+    }
+
+    .mobile-toggle img {
+      width: 18px;
+      height: 10px;
+    }
 
 
 

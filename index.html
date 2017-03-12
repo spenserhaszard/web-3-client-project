@@ -12,58 +12,46 @@
 
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Merriweather:300i,400i" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300i" rel="stylesheet">
     </head>
 <body class="flex-parent">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-<a id="mobile-menu-btn" class="btn" href="#">more</a>
+<!-- <a id="mobile-menu-btn" class="btn" href="#">more</a> -->
 
 
 
 <!--start nav bar-->
-<nav class="minimize main-border flex-parent">
-    <h1 class="flex-parent align-items-center">
-        <div>
-            <a href="#landing">
-            <img src="img/logo.png" alt="yia yia's around the world pizza"></a>
-        </div>
-    </h1>
-
-    <!--start primary nav-->
-     <ul class="main-menu flex-parent">
-        <li><a href="#menu">Menu</a></li>
-        <li class="sub-menu">
-             <ul>
-                <li><a href="#pizza">Pizza</a></li>
-                <li><a href="#beer">Beer</a></li>
-                <li><a href="#bread">Loaded Bread</a></li>
-                <li><a href="#potato">Loaded Potatoes</a></li>
-                <li><a href="#salad">Salads</a></li>
-                <li><a href="#kids">Kid's Menu</a></li>
-            </ul>
-        </li>
-        <li><a href="#delivery">Delivery</a></li>
-        <li><a href="#about">About</a></li>
-    </ul>
-    <!--end primary nav-->
-    <footer class="flex-parent">
-        <ul>
-            <li>(402) 477-9166</li><!--add in tel shit-->
-            <li>1423 East 'O' Street<br> Lincoln, NE 68508</li>
-            <li><a href="https://www.facebook.com/yiayias" target="_blank">Facebook</a></li>
-        </ul>
-    </footer>
-</nav>
+     <nav class="flex-parent">
+         <div class="logo">
+            <img src="img/logo.png">
+         </div>
+       
+         <div class="container flex-parent">
+             <ul class="main-menu flex-parent">
+                 <li id="menu-li" class="border-right-3">menu <div id="arrow"></div></li>
+                 <li class="border-right-3"><a href="#delivery">delivery</a></li>
+                 <li><a href="#about">about</a></li>
+             </ul>
+             <ul class="sub-menu">
+                 <li><a href="#pizza">pizza</a></li>
+                 <li><a href="#beer">beer</a></li>
+                 <li><a href="#potato">loaded potatoes</a></li>
+                 <li><a href="#bread">loaded breads</a></li>
+                 <li><a href="#salad">salads</a></li>
+                 <li><a href="#kids">kid's menu</a></li>
+                 <li><a href="#pdf" target="_blank">view pdf</a></li>
+             </ul>
+         </div>
+     </nav>
 <!--end nav bar-->
 
 
-    <main class="col-7-8">
+    <main>
 
 <!--         <section class="hide flex-parent" id="landing" >
             <section class="col-1-4 sub-section main-border about">
@@ -84,11 +72,12 @@
 <!--BREAD  BREAD  BREAD BREAD  BREAD  BREAD BREAD  BREAD  BREAD-->
     <section class="hide" id="bread">
 
-        <header class="header-lg flex-parent main-border">
+<!--         <header class="header-lg flex-parent main-border">
             <div class="col-3-4 flex-parent border-right-3">
                 <h2>Loaded Bread</h2>
             </div>
-        </header>
+        </header> -->
+        <h2>Loaded Bread</h2>
 
 <div class="flex-parent content-wrapper">
         <section class="col-1-2 sub-section main-border">
@@ -188,12 +177,13 @@
 
 <!--PIZZA  PIZZA  PIZZA PIZZA  PIZZA  PIZZA PIZZA  PIZZA  PIZZA-->
     <section class="hide" id="pizza">
-        <header class="header-lg flex-parent main-border">
+        <!-- <header class="header-lg flex-parent main-border">
             <div class="flex-parent col-3-4">
                 <h2>pizza</h2>
             </div>
             <div class="col-1-4">insert pic of gluten free thing</div>
-        </header>
+        </header> -->
+        <h2>pizza</h2>
 
         <div class="flex-parent content-wrapper">
             <!-- daily specials -->
@@ -545,11 +535,13 @@
 
 <!--POTATO POTATO POTATO POTATO POTATO POTATO POTATO -->
             <section class="hide" id="potato">
-                <header class="header-lg flex-parent main-border">
+<!--                 <header class="header-lg flex-parent main-border">
                     <div class="flex-parent col-1-1">
                         <h2>loaded potatoes</h2>
                     </div>
-                </header>
+                </header> -->
+                <h2>loaded potatoes</h2>
+
                 <div class="flex-parent content-wrapper">
                     <!-- specialty potatoes -->
                     <section class="col-1-2 sub-section main-border potato-specialties">
@@ -640,11 +632,13 @@
     
 <!-- SALAD SALAD SALAD SALAD SALAD SALAD SALAD SALAD SALAD SALAD SALAD -->
             <section class="hide" id="salad">
-                <header class="header-lg flex-parent main-border">
+<!--                 <header class="header-lg flex-parent main-border">
                     <div class="flex-parent col-1-1">
                         <h2>salads</h2>
                     </div>
-                </header>
+                </header> -->
+                <h2>salads</h2>
+
                 <div class="flex-parent content-wrapper">
                     <!-- specialty salads -->
                     <section class="col-1-2 sub-section main-border salad-specialties"> 
@@ -747,11 +741,12 @@
 
 <!-- KIDS MENU KIDS MENU KIDS MENU KIDS MENU KIDS MENU KIDS MENU KIDS MENU KIDS MENU-->
     <section class="hide" id="kids">
-        <header class="header-lg flex-parent main-border">
+<!--         <header class="header-lg flex-parent main-border">
             <div class="flex-parent col-1-1">
                 <h2>kid's menu</h2>
             </div>
-        </header>
+        </header> -->
+        <h2>kid's menu</h2>
 
         <div class="flex-parent content-wrapper">
             <!-- start pizza kid's meal -->
@@ -865,6 +860,10 @@
                                 <h4>the polynesian</h4>
                                 <p class="col-3-4">bacon - pepperoni - jalapeno - black olive - cranberry - pineapple - cream cheese - provolone - bbq sauce - marinara</p>
                             </section>
+                            <div class="mobile-toggle flex-parent">
+                                <h4>specialty slices</h4>
+                                <img src="img/arrow-black.png">
+                            </div>
                         </section> <!-- end sub section -->
                 <!--end specialty slices-->
             </div><!--end column wrapper-->
@@ -971,92 +970,14 @@
     </section><!--end kid's menu section-->
 
 
-<!-- HOURS HOURS HOURS HOURS HOURS HOURS HOURS HOURS HOURS HOURS -->
-
-    <section class="hide" id="hours">
-        <header class="header-lg flex-parent main-border">
-            <div class="flex-parent col-1-1">
-                <h2>hours</h2>
-            </div>
-        </header>
-        <div class="flex-parent content-wrapper">
-            <section class="col-1-2 sub-section main-border"> 
-                <header>
-                    <div class="flex-parent border-bottom-3">   
-                       <div class="header-cell border-right-3 flex-parent col-7-8">
-                           <h3>hours of operation</h3>
-                       </div>
-                       <div class="col-1-8 flex-parent"><img src="" alt=""></div>
-                    </div>
-                </header>
-
-                <section class="flex-parent">
-                    <h4>Monday</h4>
-                    <ol class="flex-parent">
-                        <li>11:00am</li>
-                        <li>—</li>
-                        <li>12:00am</li>
-                    </ol>
-                </section>
-                <section class="flex-parent">
-                    <h4>Tuesday</h4>
-                    <ol class="flex-parent">
-                        <li>11:00am</li>
-                        <li>—</li>
-                        <li>12:00am</li>
-                    </ol>
-                </section>
-                <section class="flex-parent">
-                    <h4>Wednesday</h4>
-                    <ol class="flex-parent">
-                        <li>11:00am</li>
-                        <li>—</li>
-                        <li>12:00am</li>
-                    </ol>
-                </section>
-                <section class="flex-parent">
-                    <h4>Thursday</h4>
-                    <ol class="flex-parent">
-                        <li>11:00am</li>
-                        <li>—</li>
-                        <li>12:00am</li>
-                    </ol>
-                </section>
-                <section class="flex-parent">
-                    <h4>Friday</h4>
-                    <ol class="flex-parent">
-                        <li>11:00am</li>
-                        <li>—</li>
-                        <li>1:00am</li>
-                    </ol>
-                </section>
-                <section class="flex-parent">
-                    <h4>Saturday</h4>
-                    <ol class="flex-parent">
-                        <li>11:00am</li>
-                        <li>—</li>
-                        <li>1:00am</li>
-                    </ol>
-                </section>
-                <section class="flex-parent">
-                    <h4>Sunday</h4>
-                    <ol class="flex-parent">
-                        <li>12:00pm</li>
-                        <li>—</li>
-                        <li>9:00pm</li>
-                    </ol>
-                </section>
-            </section>
-        </div>
-    </section>
-
-    <!-- DELIVERY DELIVERY DELIVERY DELIVERY DELIVERY --> 
+<!-- DELIVERY DELIVERY DELIVERY DELIVERY DELIVERY --> 
         <section class="hide" id="delivery">
-            <header class="header-lg flex-parent main-border">
+           <!--  <header class="header-lg flex-parent main-border">
                 <div class="flex-parent col-1-1">
                     <h2>delivery</h2>
                 </div>
-            </header>
+            </header> -->
+            <h2>delivery</h2>
            
             <!-- start content section -->
             <div class="flex-parent content-wrapper">
@@ -1100,80 +1021,50 @@
                 </section>
 				</div>
 
-                                <div class="col-1-2">
-                                            <section class="sub-section main-border">
-                                    <header>
-                                        <div class="flex-parent border-bottom-3">
-                                            <div class="header-cell col-1-1 flex-parent">
-                                                <h3>metro dining delivery</h3>
-                                            </div>
-                                        </div>
-                                    </header>
+                <div class="col-1-2">
+                            <section class="sub-section main-border">
+                    <header>
+                        <div class="flex-parent border-bottom-3">
+                            <div class="header-cell col-1-1 flex-parent">
+                                <h3>metro dining delivery</h3>
+                            </div>
+                        </div>
+                    </header>
 
-                                    <div class="flex-parent">
-                                       <div class="col-1-1">
-                                            <section class="flex-parent border-bottom-3">
-                                                <h4>Monday-Saturday</h4>
-                                                <ol class="item-prices"><li>10:00AM - 10:00PM</li></ol>
-                                            </section>
+                    <div class="flex-parent">
+                       <div class="col-1-1">
+                            <section class="flex-parent border-bottom-3">
+                                <h4>Monday-Saturday</h4>
+                                <ol class="item-prices"><li>10:00AM - 10:00PM</li></ol>
+                            </section>
 
-                                            <section class="flex-parent border-bottom-3">
-                                                <h4>Sunday</h4>
-                                                <ol class="item-prices"><li>10:00AM - 9:00PM</li></ol>
-                                            </section>
-                                            <section class="flex-parent border-bottom-3">
-                                                <h4><a href="tel:1-4024747335">(402) 474-7335</a></h4>
-                                            </section>
-                                            <section class="flex-parent border-bottom-3">
-                                                <h4><a href="http://www.metrodiningdelivery.com">metrodiningdelivery</a></h4>
-                                            </section>
-                                        </div>
-                                    </div>
-                                </section>
-                                </div>
+                            <section class="flex-parent border-bottom-3">
+                                <h4>Sunday</h4>
+                                <ol class="item-prices"><li>10:00AM - 9:00PM</li></ol>
+                            </section>
+                            <section class="flex-parent border-bottom-3">
+                                <h4><a href="tel:1-4024747335">(402) 474-7335</a></h4>
+                            </section>
+                            <section class="flex-parent border-bottom-3">
+                                <h4><a href="http://www.metrodiningdelivery.com">metrodiningdelivery</a></h4>
+                            </section>
+                        </div>
+                    </div>
+                </section>
+                </div>
             </div> <!-- end content wrapper -->
         </section>
 
-<!-- CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT --> 
-       
-        <!-- start content section -->
-<!--         <div class="flex-parent content-wrapper">
-            <figure class="sub-section main-border col-1-1">
-                <a href="http://www.google.com" target="_blank">
-                </a>
-                <figcaption>
-                    <ul class="flex-parent">
-                        <li class="border-right-3">
-                            <a href="" target="_blank">
-                                <span><img src="img/pin.png" alt=""></span>
-                                1423 east o street, lincoln, ne 68508
-                            </a>
-                        </li>
-                        <li class="border-right-3">
-                            <a href="tel:1-4024779166">
-                                <span><img src="img/phone.png" alt=""></span>(402) 477-9166
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://www.facebook.com/yiayias" target="_blank">
-                                <span><img src="img/fb-icon.png" alt=""></span>
-                                facebook.com/yiaiyas
-                            </a>
-                        </li>
-                    </ul>
-                </figcaption>
-            </figure>
-        </div>
-    </section> -->
 
 
 <!-- ABOUT ABOUT ABOUT ABOUT ABOUT --> 
     <section class="hide" id="about">
-        <header class="header-lg flex-parent main-border">
+<!--         <header class="header-lg flex-parent main-border">
             <div class="flex-parent col-1-1">
                 <h2>about</h2>
             </div>
-        </header>
+        </header> -->
+        <h2>about</h2>
        
         <!-- start content section -->
         <div class="flex-parent content-wrapper">
