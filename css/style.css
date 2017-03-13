@@ -506,7 +506,9 @@ of column next to it*/
 #landing {
   display: flex;
 }
-
+#beer ul {
+  padding-top: 45px;
+}
 /*--------------------------------------------------------------
 4.0 - Media
 -------------------------------------------------------------- */
@@ -542,7 +544,10 @@ of column next to it*/
   max-width: 25px;
   width: 2vw;
 }
-
+#beer .main-border {
+  background: #383838;
+  height: 100vh;
+}
 
 /*--------------------------------------------------------------
 5.0 - Utility
@@ -551,7 +556,10 @@ of column next to it*/
 .header-lg>div:first-child {
   background-color: orange;
 }
-
+.black-bg {
+  background-color: #383838;
+  color: #fff;
+}
 body {
   background-image: url(../img/dots.png);
   background-repeat: repeat;
