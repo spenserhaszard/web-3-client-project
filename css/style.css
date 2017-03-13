@@ -139,11 +139,16 @@ h4 {
   font-weight: 700;
 }
 
-#beer p {
-  font-family: 'montserrat', sans-serif;
-  font-size: 1.1rem;
-  font-weight: 300;
-  width: 33%;
+#home h2 {
+    margin-top: 15px;
+}
+
+#home p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.25;
+  margin-top: 25px;
 }
 
 /* #about .sub-section section p {
@@ -383,7 +388,7 @@ nav a:hover {
 -------------------------------------------------------------- */
 /* 3.1 - Structure (Widths) */
 main>section {
-  margin-top: 65px;
+  padding-top: 100px;
 }
 
 #home  {
@@ -522,6 +527,10 @@ header .col-1-8 {
 
 #beer {
   height: 70vh;
+}
+
+#home .col-1-2 {
+  padding-right: 100px;
 }
 
 
@@ -841,14 +850,7 @@ body {
    .logo, .container {
       height: 65px;
   }
-  
-  .sub-menu {
-    display: none;
-  }
 
-  .drop-down {
-    display: flex;
-  }
 
 
 
@@ -872,6 +874,11 @@ body {
   main {
     width: 90vw;
   }
+
+  main>section {
+    padding-top: 65px;
+  }
+
 }/* end tablet media query */
 
 @media screen and (max-width: 480px) {
@@ -951,6 +958,14 @@ body {
       height: 18px;
     }
 
+    .sub-menu {
+      display: none;
+    }
+
+    .drop-down {
+      display: flex;
+    }
+
     /*--------------------------------------------------------------
     3.0 - M O B I L E  S T R U C T U R E 
     -------------------------------------------------------------- */
@@ -962,6 +977,10 @@ body {
     .mobile-toggle img {
       width: 18px;
       height: 10px;
+    }
+
+    main>section {
+      padding-top: 65px;
     }
 
 

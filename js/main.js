@@ -1,13 +1,14 @@
 $(document).ready(function(){
 
 
-	setTimeout(function(){
-	    $('#loader').addClass('hide');
-	    $('#home').addClass('show');
-	}, 3000);
+	// setTimeout(function(){
+	//     $('#loader').addClass('hide');
+	//     $('#home').addClass('show');
+	// }, 3000);
 
 
 	  $("nav a").on("click", function() {
+	  	$('.sub-menu').removeClass("drop-down");
 	    $("nav a").removeClass('active');
 	    $(this).addClass('active');
 	    var id = $(this).attr("href");
@@ -17,10 +18,15 @@ $(document).ready(function(){
 	  })
 
 
+
 	$('#menu-li').click( function() {
 	  $(".sub-menu").toggleClass("drop-down");
 	  $("#arrow").toggleClass("animate");
 	} );
+
+	$('.sub-menu > li > a').click(function(){
+		$('.sub-menu').removeClass("drop-down");
+	})
 
 	//   $(document).click(function(e) {
 	//     var target = e.target;
