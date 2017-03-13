@@ -102,9 +102,6 @@ h2 {
   justify-content: flex-start;
  }
 
- #beer {
-  color: #f0f0f0;
- }
 
  h3 { 
   width: 100%;
@@ -524,7 +521,6 @@ header .col-1-8 {
 
 
 #beer {
-  background-color: #383838;
   height: 70vh;
 }
 
@@ -565,12 +561,16 @@ header .col-1-8 {
   width: 2vw;
 }
 #beer .main-border {
-  background: #383838;
+  background: orange;
   height: 75vh;
   padding: 100px 0;
 }
 
 /*loading screen*/
+/*.no-js #loader {
+    display: none;
+}*/
+
 #loader {
   position: relative;
   margin: 40px auto;
