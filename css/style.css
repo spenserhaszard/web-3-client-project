@@ -536,6 +536,7 @@ header .col-1-8 {
 .pizza-specials .col-1-6 img, .kids-pizza-specials .col-1-6 img {
   width: 100%;
   max-width: 57px;
+  z-index: -1;
 }
 
 .pizza-specialties img {
