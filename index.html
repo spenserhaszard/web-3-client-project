@@ -28,7 +28,7 @@
 <!--start nav bar-->
      <nav class="flex-parent">
          <div class="logo">
-            <img src="img/logo.png">
+            <a href="#home"><img src="img/logo.png"></a>
          </div>
        
          <div class="container flex-parent">
@@ -52,21 +52,26 @@
 
 
     <main>
+    <section class="hide" id="landing">
 
-<!--         <section class="hide flex-parent" id="landing" >
-            <section class="col-1-4 sub-section main-border about">
-                <h2>Welcome to Yia Yia's</h2>
-                <p>home of Lincoln's best pizza and largest beer selection. Our famous Around The World pizza is made to order with a huge variety of quality ingredients and served with our freshly baked bread. We are proud to serve over 400 bottled beers, as well as a rotating tap beer selection. (Include something about events like: Follow us on Facebook to hear about upcoming live music events.)</p>
-                <ul>
-                    <li><a href="#menu">Our Menu</a></li>
-                </ul>
-            </section>
-            <img src="http://gallivant.com/p/2013/02/yia-yias-2.jpg" class="col-3-4">
+        <section id="loader">
+            <div class="pie spinner"></div>
+            <div class="pie filler"></div>
+            <div class="mask"></div>
+        </section>
 
-            <section class="hide" id="menu">
-                <img src="http://pngimg.com/uploads/pizza/pizza_PNG7151.png" class="rotating">
-            </section>
-        </section> -->
+
+        <section class="hide flex-parent content-wrapper col-1-1 sub-section main-border" id="home">
+            <header>
+                <h2>Yia Yia's Pizza and Beer</h2>
+            </header>
+            <p>Home of Lincoln's<a href="http://www.dailynebraskan.com/nse/staff-picks-lincoln-s-best-pizza/article_d7cbd678-a775-11e4-9a8f-3fb8d13880fd.html" target="_blank">best</a> <a href="http://journalstar.com/entertainment/dining/the-best-places-for-pizza-in-lincoln/collection_b27f5573-9a83-516c-b901-a1c7c0852bcd.html" target="_blank">pizza</a>. Our famous Around The World pizza is made to order with a huge variety of quality ingredients and served with our freshly baked bread.</p>
+            <a class="btn">View Menu</a>
+
+            <p>We have Lincoln and largest beer selection, and are proud to serve over 400 bottled beers, as well as a rotating tap beer selection.</p>
+            <a class="btn">About our Beers</a>
+        </section>
+    </section>
 
 
 <!--BREAD  BREAD  BREAD BREAD  BREAD  BREAD BREAD  BREAD  BREAD-->
@@ -1192,26 +1197,22 @@
 
         <!-- BEER BEER BEER BEER BEER BEER BEER --> 
                 <section class="hide" id="beer">
-                    <h2>Beer</h2>
-                   
                     <!-- start content section -->
                     <div class="flex-parent content-wrapper">
                         <div class="col-1-1">
-                          <section class="sub-section main-border">
                             <header>
-                                <div class="flex-parent border-bottom-3">
-                                    <div class="header-cell col-1-1 border-right-3 flex-parent">
-                                        <h3>Lincoln's Largest Selectio</h3>
-                                    </div>
-                                </div>
+                                <h2>Lincoln's Largest Beer Selection</h2>
                             </header>
-                            <section class="col-1-4 black-bg sub-section about">
-                                <p>home of Lincoln's largest beer selection. We are proud to serve over 400 bottled beers, as well as a rotating tap beer selection.</p>
-                                <ul>
-                                    <li><a href="#menu" class="active">Our Beer</a></li>
-                                </ul>
-                            </section>
-                        </section>
+                            <div class="flex-parent">
+                                <p class="col-1-2">Home of Lincoln's largest beer selection. We are proud to serve over 400 bottled beers, as well as a rotating tap beer selection.
+                                <a href="#menu" class="active">View Beer List</a>
+                                </p>
+
+                                <a href="https://www.beeradvocate.com/beer/profile/9690/" targer="_blank"><p class="col-1-2">
+                                92% rating on Beeradvocate
+                                </p></a>
+                               
+                            </div>
                         </div>
                     </div> <!-- end content wrapper -->
                 </section>
