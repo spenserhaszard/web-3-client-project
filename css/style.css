@@ -971,18 +971,24 @@ body {
       font-size: 2.5vw;
     }
 
-    .col-1-2 {
-      width: 100%;
+    #home h2 {
+      font-size: 4.25rem;
     }
 
-    .sub-section header.flex-parent {
-      display: block;
+    #home p {
+      margin-top: 30px;
+      font-size: 2rem;
     }
 
-    .sub-section header.flex-parent>* {
-      width: 100%;
+    #home p:last-of-type {
+      margin-top: 45px;
     }
 
+    .btn {
+      margin-top: 15px;
+      padding: 2% 6%;
+      font-size: 1.75rem;
+    }
 
 
 
@@ -1034,9 +1040,8 @@ body {
     }
 
     #arrow {
-      margin-left: 20px;
-      width: 18px;
-      height: 18px;
+      margin-left: 15px;
+      width: 16px;
     }
 
     .sub-menu {
@@ -1050,6 +1055,26 @@ body {
     /*--------------------------------------------------------------
     3.0 - M O B I L E  S T R U C T U R E 
     -------------------------------------------------------------- */
+    main>section {
+      padding-top: 65px;
+    }
+
+    #home .col-1-2 {
+        width: 93%;
+    }
+
+    .col-1-2 {
+      width: 100%;
+    }
+
+    .sub-section header.flex-parent {
+      display: block;
+    }
+
+    .sub-section header.flex-parent>* {
+      width: 100%;
+    }
+
     .mobile-toggle {
       background-color: orange;
       padding: 10px;
@@ -1060,9 +1085,7 @@ body {
       height: 10px;
     }
 
-    main>section {
-      padding-top: 65px;
-    }
+
 
 
 

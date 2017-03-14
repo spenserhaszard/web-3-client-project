@@ -17,6 +17,14 @@ $(document).ready(function(){
 	    $("main>section").not(id).addClass("hide");
 	  })
 
+	  $("#home .btn:first-of-type").on("click", function() {
+	  	$('.sub-menu').removeClass("drop-down");
+	  	$("nav a").removeClass('active');
+	  	$('.pizza-anchor').addClass('active');
+	  	$('#home').addClass('hide');
+	  	$('#pizza').removeClass('hide');
+	  })
+
 
 
 	$('#menu-li').click( function() {
