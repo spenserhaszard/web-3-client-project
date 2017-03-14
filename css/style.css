@@ -1014,6 +1014,7 @@ body {
     .main-menu {
       height: 100%;
       border: 3px solid #383838;
+      font-size: 1.75rem;
     }
 
    .drop-down {
@@ -1040,7 +1041,7 @@ body {
     }
 
     #arrow {
-      margin-left: 15px;
+      margin-left: 10px;
       width: 16px;
     }
 
@@ -1051,6 +1052,8 @@ body {
     .drop-down {
       display: flex;
     }
+
+
 
     /*--------------------------------------------------------------
     3.0 - M O B I L E  S T R U C T U R E 
