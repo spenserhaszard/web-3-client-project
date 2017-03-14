@@ -222,6 +222,11 @@ a {
   text-transform: capitalize;
 }
 
+.btn:hover {
+  background: #383838;
+  color: #f0f0f0;
+}
+
 /* 1.4 - Forms */
 /* 1.5 - Lists */
 .item-prices, .hours ol, #salad span {
@@ -878,7 +883,7 @@ body {
 7.0 media query
 -------------------------------------------------------------- */
     /*--------------------------------------------------------------
-    >>>  M O B I L E  S T Y L E S:
+    >>>  T A B L E T  S T Y L E S:
     ----------------------------------------------------------------
     1.0 - Typography
       1.1 - Headings
@@ -904,6 +909,11 @@ body {
     --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   
+  /*--------------------------------------------------------------
+     1.0 - T A B L E T   T Y P O G R A P H Y 
+     -------------------------------------------------------------- */
+
+
   html {
     font-size: 2vw;
   }
@@ -912,8 +922,27 @@ body {
     font-size: 2vh;
     justify-content: flex-start;
   }
-  #beer h3 { 
-    height: auto;
+
+  #home h2 { 
+    font-size: 3rem;
+  }
+
+  #home p {
+    font-size: 1.75rem;
+  }
+
+  #home .sub-section:last-of-type p {
+    margin-top: 40px;
+  }
+
+  #home .content-wrapper .col-1-2 {
+    width: 100%;
+  }
+
+  .btn {
+    font-size: 1.35rem;
+    padding: 1.75% 3.5%;
+    margin-top: 15px;
   }
 
 
@@ -923,6 +952,7 @@ body {
     -------------------------------------------------------------- */
    nav {
      width: 90vw;
+     font-size: 1.35rem;
    }
 
    .logo img {
@@ -931,6 +961,10 @@ body {
 
    .logo, .container {
       height: 65px;
+  }
+
+  .sub-menu {
+    font-size: 1rem;
   }
 
 
