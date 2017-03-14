@@ -601,7 +601,9 @@ header .col-1-8 {
 .pizza-specialties img {
   width: 15px;
 }
-
+.salad-img, .potato-img {
+  width: 40%;
+}
 .potato-specials img {
   width: 70%;
   max-width: 90px;
