@@ -15,7 +15,7 @@ $(document).ready(function(){
 	    $(id).removeClass("hide");
 	    $("main>div").not(id).addClass("hide");
 	    $("main>section").not(id).addClass("hide");
-	  })
+	  });
 
 	  $("#home .btn:first-of-type").on("click", function() {
 	  	$('.sub-menu').removeClass("drop-down");
@@ -23,7 +23,7 @@ $(document).ready(function(){
 	  	$('.pizza-anchor').addClass('active');
 	  	$('#home').addClass('hide');
 	  	$('#pizza').removeClass('hide');
-	  })
+	  });
 
 
 
@@ -35,7 +35,7 @@ $(document).ready(function(){
 
 	$('.sub-menu > li > a').click(function(){
 		$('.sub-menu').removeClass("drop-down");
-	})
+	});
 
 	jQuery(document).ready(function() { 
 	    jQuery(".mobile-toggle").click(function() {

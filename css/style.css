@@ -300,7 +300,6 @@ nav {
   padding: 0;
   font-family: 'roboto slab', monospace;
   font-size: 1.85rem;
-  font-weight: 00;
   text-transform: capitalize;
   z-index: 1000;
 }
@@ -578,8 +577,6 @@ header .col-1-8 {
 }
 
 
-
-
 /*--------------------------------------------------------------
 4.0 - Media
 -------------------------------------------------------------- */
@@ -711,8 +708,6 @@ header .col-1-8 {
     opacity: 0;
   }
 }
-
-
 
 
 
