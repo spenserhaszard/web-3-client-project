@@ -12,9 +12,9 @@ $(document).ready(function(){
 	    $("nav a").removeClass('active');
 	    $(this).addClass('active');
 	    var id = $(this).attr("href");
-	    $(id).addClass("show");
-	    $("div").not(id).removeClass("show");
-	    $("section").not(id).removeClass("show");
+	    $(id).removeClass("hide");
+	    $("main>div").not(id).addClass("hide");
+	    $("main>section").not(id).addClass("hide");
 	  })
 
 

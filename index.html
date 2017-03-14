@@ -15,6 +15,7 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Merriweather:300i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
     </head>
 <body class="flex-parent">
         <!--[if lt IE 8]>
@@ -40,12 +41,12 @@
              </ul>
              <ul class="sub-menu">
                  <li><a href="#pizza">pizza</a></li>
-                 <li><a href="#beer">beer</a></li>
+                 <li><a href="img/pdf/bottles.pdf" target="_blank">beer</a></li>
                  <li><a href="#potato">loaded potatoes</a></li>
                  <li><a href="#bread">loaded breads</a></li>
                  <li><a href="#salad">salads</a></li>
                  <li><a href="#kids">kid's menu</a></li>
-                 <li><a href="#pdf" target="_blank">view pdf</a></li>
+                 <li><a href="img/pdf/menu.pdf" target="_blank">view PDF</a></li>
              </ul>
          </div>
      </nav>
@@ -80,20 +81,30 @@
     </section> -->
 
 
+        <section class="show" id="home">
+            <div class="content-wrapper main-border">
 
+                <header>
+                    <h2>Yia Yia's Pizza and Beer</h2>
+                </header>
 
-<!-- 
-        <section class="flex-parent content-wrapper col-1-1 sub-section main-border" id="home">
-            <header>
-                <h2>Yia Yia's Pizza and Beer</h2>
-            </header>
-            <p>Home of Lincoln's<a href="http://www.dailynebraskan.com/nse/staff-picks-lincoln-s-best-pizza/article_d7cbd678-a775-11e4-9a8f-3fb8d13880fd.html" target="_blank">best</a> <a href="http://journalstar.com/entertainment/dining/the-best-places-for-pizza-in-lincoln/collection_b27f5573-9a83-516c-b901-a1c7c0852bcd.html" target="_blank">pizza</a>. Our famous Around The World pizza is made to order with a huge variety of quality ingredients and served with our freshly baked bread.</p>
-            <a class="btn">View Menu</a>
+                <div class="flex-parent content-wrapper">
 
-            <p>We have Lincoln and largest beer selection, and are proud to serve over 400 bottled beers, as well as a rotating tap beer selection.</p>
-            <a class="btn">About our Beers</a>
+                <section class="sub-section col-1-2">
+                    <p>Home of <a href="http://journalstar.com/entertainment/dining/the-best-places-for-pizza-in-lincoln/collection_b27f5573-9a83-516c-b901-a1c7c0852bcd.html" target="_blank">Lincoln's best pizza</a>. Our famous Around The World Pizza is made to order with a huge variety of quality ingredients and served with our freshly baked bread.</p>
+                    <a class="btn" href="img/pdf/menu.pdf" target="_blank">view menu</a>
+                </section>
+
+                <section class="sub-section col-1-2">
+                    <p>We have Lincoln and largest beer selection, and are proud to serve over 400 bottled beers, as well as a rotating tap beer selection.</p>
+                    <a class="btn" href="img/pdf/bottles.pdf" target="_blank">view beers</a>
+                </section>
+
+                </div>
+            </div>
         </section>
-    </section> -->
+
+
 
     <!--PIZZA  PIZZA  PIZZA PIZZA  PIZZA  PIZZA PIZZA  PIZZA  PIZZA-->
         <section class="hide" id="pizza">
@@ -145,6 +156,14 @@
                             </div>
 
                         </div>
+                    </section>
+
+                    <section class="sub-section gluten-free">
+                        <header class="flex-parent col-1-1">
+                            <h4 class="col-7-8">8" gluten-free crust available</h4>
+                            <ol class="col-1-8 item-prices"">
+                                <li>12.00</li>
+                            </ol>
                     </section>
 
                     <!-- the international -->
@@ -590,8 +609,40 @@
                 <h2>loaded potatoes</h2>
 
                 <div class="flex-parent content-wrapper">
-                    <!-- specialty potatoes -->
-                    <section class="col-1-2 sub-section main-border potato-specialties">
+                    <div class="col-1-2 flex-parent">
+                    <!-- potatato special -->
+                    <section class="sub-section main-border potato-specials">
+                        <header>
+                            <div class="flex-parent border-bottom-3">
+                                <div class="header-cell col-2-3 border-right-3 flex-parent">
+                                    <h3>daily specials</h3>
+                                </div>
+                                <div class="col-1-3 italic-cell flex-parent">
+                                    <div>
+                                        <p>includes side salad and drink</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+
+                        <div class="flex-parent">
+                           <div class="col-5-6 border-right-3">
+                                <section class="flex-parent">
+                                    <h4>potato special</h4>
+                                    <p>cheese - 3 toppings</p>
+                                    <ol class="item-prices"><li>7.80</li></ol>
+                                </section>
+                            </div>
+
+                            <div class="col-1-6 flex-parent align-items-center">
+                                <img src="img/potato.png" class="bounce" alt="">
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <!--specialty potatoes-->
+                    <section class="sub-section main-border potato-specialties">
                             <header>
                                  <div class="border-bottom-3">   
                                     <div class="flex-parent header-cell">
@@ -631,8 +682,10 @@
                             </section>
                     </section><!--end specialty potatoes-->
 
+                </div>
                     <!-- international potatoes -->
-                    <section class="col-1-2 sub-section main-border potato-international">
+                <div class="flex-parent col-1-2">
+                    <section class="sub-section main-border potato-international">
                             <header>
                                  <div class="flex-parent border-bottom-3">   
                                     <div class="header-cell col-7-8 border-right-3 flex-parent">
@@ -675,6 +728,7 @@
 
                     </section>
                 </div>
+                </section>
                 </section>
     
 <!-- SALAD SALAD SALAD SALAD SALAD SALAD SALAD SALAD SALAD SALAD SALAD -->
@@ -1007,7 +1061,7 @@
                         <p class="col-3-4">hamburger - italian sausage - pepperoni - bacon - grilled chicken - ground turkey - ham - anchovie</p>
                     </section>
                     <section>
-                        <h4>extra sauce</h4>
+                        <h4>sauce</h4>
                         <p class="col-3-4">marinara - pesto - red pesto - bbq sauce - white - oil &amp; herbs - buffalo sauce</p>
                     </section>
                 </section><!--end international for kid's menu-->
@@ -1029,7 +1083,7 @@
             <!-- start content section -->
             <div class="flex-parent content-wrapper">
                 <div class="col-1-2">
-                  <section class="sub-section main-border">
+                  <section class="sub-section main-border picnicker">
                     <header>
                         <div class="flex-parent border-bottom-3">
                             <div class="header-cell col-2-3 border-right-3 flex-parent">
@@ -1045,31 +1099,35 @@
 
                     <div class="flex-parent">
                        <div class="col-1-1">
-                            <section class="flex-parent">
+                            <section class="flex-parent border-bottom-3">
                                 <h4>Monday-Friday</h4>
                                 <ol class="item-prices"><li>10:30AM - 9:30PM</li></ol>
                             </section>
 
-                        <ol class="col-1-1 flex-parent space-between border-bottom-3">
-                            <li>
-                                <ol>
-									<li><a href="tel:1-5158032453">(515) 803-2453</a>"</li>
-                                </ol>
-                            </li>
-                            <li>
-                                <ol>
-                                    <li><a href="http://www.picnicker.com">picnicker.com</a></li>
-                                </ol>
-                            </li>
-                        </ol>
+                            <div class="flex-parent col-1-1">
+                                <section class="col-1-2">
+                                    <a class="flex-parent" href="tel:1-5158032453">
+                                        <h4><!--img goes here--></h4>
+                                        <p>(515) 803-2453</p>
+                                    </a>
+                                </section>
+
+                                <section class="col-1-2">
+                                    <a class="flex-parent" href="http://www.picnicker.com" target="_blank">
+                                        <h4><!--img goes here--></h4>
+                                        <p>picnicker.com</p>
+                                    </a>
+                                </section>
+
+                            </div>
                         </div>
                     </div>
-                    <img src="img/map-lg.jpeg" class="col-1-1">
+                    <a href="https://a.tiles.mapbox.com/v4/picnicker.noo5f2lm/attribution,zoompan,geocoder,share.html?access_token=pk.eyJ1IjoicGljbmlja2VyIiwiYSI6ImNpZzA3OGxjMDA1c2V1OWtwaTA3ZmhuMmoifQ.IQ2uRxtIyxgssoTOkFKBrA#14/40.8128/-96.7042" target="_blank"><img src="img/map-lg.jpeg" class="col-1-1"></a>
                 </section>
 				</div>
 
                 <div class="col-1-2">
-                            <section class="sub-section main-border">
+                            <section class="sub-section main-border metro">
                     <header>
                         <div class="flex-parent border-bottom-3">
                             <div class="header-cell col-1-1 flex-parent">
@@ -1119,7 +1177,7 @@
                 <section class="sub-section main-border hours">
                     <header>
                         <div class="flex-parent border-bottom-3">
-                            <div class="header-cell col-1-1 border-right-3 flex-parent">
+                            <div class="header-cell col-1-1 flex-parent">
                                 <h3>hours of operation</h3>
                             </div>
                         </div>
@@ -1209,8 +1267,12 @@
                                     <p>1423 east o street, lincoln, ne 68508</p>
                                 </a>
                             </section>
+
+
+
                             <div class="flex-parent">
-                                <section class="col-1-2 border-right-3">
+
+                                <section class="col-2-5 border-right-3">
                                     <a class="flex-parent" href="tel:1-4024779166">
                                         <h4>
                                           <img src="img/phone.png" alt="phone number">
@@ -1218,15 +1280,20 @@
                                         <p>(402) 477-9166</p>
                                     </a>
                                 </section>
-                                <section class="col-1-2">
-                                    <a href="http://www.facebook.com/yiayias" target="_blank">
+
+                                <section class="col-3-5">
+                                    <a class="flex-parent" href="http://www.facebook.com/yiayias" target="_blank">
                                         <h4>
                                             <img src="img/fb-icon.png" alt="facebook">
                                         </h4>
                                         <p>facebook.com/yiaiyas</p>
                                     </a>
                                 </section>
+
                             </div>
+
+
+
                         </div>
                           
                     </section>
