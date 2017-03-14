@@ -32,9 +32,24 @@ $(document).ready(function(){
 	  $("#arrow").toggleClass("animate");
 	} );
 
+
 	$('.sub-menu > li > a').click(function(){
 		$('.sub-menu').removeClass("drop-down");
 	})
+
+	jQuery(document).ready(function() { 
+	    jQuery(".mobile-toggle").click(function() {
+	        jQuery(this).siblings("section").toggle(); 
+	    });
+	});
+
+	$('.mobile-toggle').click( function() {
+	  $(this).siblings(".drawer").toggle();
+	} );
+
+
+
+
 
 	//   $(document).click(function(e) {
 	//     var target = e.target;

@@ -573,6 +573,9 @@ header .col-1-8 {
   align-items: center;
 }
 
+.mobile-toggle {
+  display: none;
+}
 
 
 
@@ -1115,14 +1118,18 @@ body {
     }
 
     .mobile-toggle {
-      background-color: orange;
+      display: flex;
+      background-color: #f0f0f0;
       padding: 10px;
+      color: #383838;
+      border-bottom: 3px solid #383838;
     }
 
     .mobile-toggle img {
       width: 18px;
       height: 10px;
     }
+
 
 
 
