@@ -945,6 +945,15 @@ body {
     margin-top: 15px;
   }
 
+  .italic-cell {
+    text-align: left;
+    justify-content: flex-start;
+  }
+
+  .header-cell h3, .italic-cell {
+    padding-left: 10px;
+  }
+
 
 
  /*--------------------------------------------------------------
@@ -1101,14 +1110,6 @@ body {
     }
 
     .col-1-2 {
-      width: 100%;
-    }
-
-    .sub-section header.flex-parent {
-      display: block;
-    }
-
-    .sub-section header.flex-parent>* {
       width: 100%;
     }
 
