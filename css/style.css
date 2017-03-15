@@ -13,7 +13,7 @@
   3.1 - Site Structure
   3.2 - Alignments
 4.0 - Media
-5.1 - Random/Background Colors
+5.1 - Background, Animations, Borders, Etc.
 6.0 - Tablet Media Query
 7.0 - Mobile Media Query
 --------------------------------------------------------------*/
@@ -32,12 +32,6 @@ h2, h3 {
 }
 
 .header-cell {
-/*  background-image: url(../img/lines.png);
-  background-size: 65px;
-  background-repeat: repeat;*/
-/*  background-color: #383838;*/
-  justify-content: center;
-  align-items: center;
   padding: 4px;
 }
 
@@ -49,12 +43,7 @@ h3 {
   font-weight: 500;
   color: #f0f0f0;
   padding: 5px;
-  background-color: #383838
  }
-
-h2 {
-  display: none;
-}
 
 #home h2 {
   font-size: 4.5rem;
@@ -62,22 +51,8 @@ h2 {
   font-weight: 700;
   display: block;
   text-align: left;
-  justify-content: flex-start;
  }
-
-
- h3 { 
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .sub-section header .col-1-8 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 4px;
 }
 
@@ -88,9 +63,6 @@ h2 {
   text-transform: uppercase;
   text-align: center;
   color: #f0f0f0;
-  background-color: #383838;
-  width: 100%;
-  height: 100%;
   padding: 4px;
 }
 
@@ -105,25 +77,13 @@ h4 {
 #home h2 {
     margin-top: 35px;
 }
-
-
-/* #about .sub-section section p {
-  font-family: 'montserrat', sans-serif;
-  font-size: 1.15rem;
-  text-transform: uppercase;
-  font-weight: 400;
- }*/
-
 .italic-cell {
   font-style: italic;
   font-weight: 300;
   font-family: 'Merriweather', serif;
   font-size: 1.4rem;
   letter-spacing: -.5px;
-  padding: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 5px;;
   text-align: center;
 }
 
@@ -131,10 +91,6 @@ h4 {
 /* 1.2 - Body Copy */
 body {
   font-family: 'Raleway', sans-serif;
-  background-color: #f0f0f0;
-  justify-content: space-between;
-/*  height: 100vh;
-  min-height: 718px;*/
 }
 
 .sub-section section p {
@@ -161,27 +117,20 @@ body {
   text-transform: uppercase;
 }
 
-.contact section a {
-  align-items: center;
-}
-
 
 /* 1.3 - Buttons */
 a {
   text-decoration: none;
   color: inherit;
 }
-
 .btn {
   display: inline-block;
   padding: 3.5% 9%;
-/*  background-color: orange;*/
   margin-top: 45px;
   font-family: 'roboto slab', monospace;
   font-size: 1.85rem;
   font-weight: 400;
   background: url(../img/speckles.png) center repeat;
-  border: 3px solid #383838;
   text-transform: capitalize;
 }
 
@@ -189,68 +138,48 @@ a {
   background: #383838;
   color: #f0f0f0;
 }
-
-/* 1.4 - Forms */
-/* 1.5 - Lists */
+#home p>a {
+  border-bottom: 3px solid orange;
+}
+#home p>a:hover {
+  border-bottom-color: #383838;
+}
+/* 1.4 - Lists */
 .item-prices, .hours ol, #salad span {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'montserrat', sans-serif;
   font-size: 1rem;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.25px;
 }
-
-
-.sub-section section ol {
-  justify-content: space-around;
-}
 .sub-section header ol {
-  justify-content: space-around;
   padding: 0;
 }
-
 .sub-section header ol ol {
   padding: 5px;
 }
-
 .header-list {
   font-size: 1rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
 }
-
 .sub-section header ol ol li:last-child, #bread .header-list, .potato-international .header-list {
   font-weight: 700;
 }
-
 section ol li {
   text-align: center;
 }
-
 .header-list>li, .potato-international .header-list {
     border-right: 1px solid #383838;
     flex-basis: 25%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
-
 .header-list>li:last-of-type {
   border-right: none;
 }
-
-.pizza-specialties .header-list>li {
-  align-items: flex-end;
-}
-
 #bread .header-list li {
   flex-basis: 50%;
 }
-
-
-
-
 
 
 /*--------------------------------------------------------------
@@ -272,13 +201,10 @@ nav {
 }
 
 .container {
-  flex-direction: column;
   flex: 1 1 90%;
-  border: 3px solid #383838;
 }
 
 nav ul {
-  justify-content: space-around;
   padding: 0;
   margin: 0;
   flex: 1 1 auto;
@@ -287,57 +213,35 @@ nav ul {
 
 nav li {
   list-style-type: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   flex: 1 0 auto;
 }
 
+
 .logo {
   flex: 1 1 10%;
-  border: 3px solid #383838;
-  border-right: none;
 }
-
 .logo img {
   max-height: 75px;
 }
 
 nav .logo a {
-  display: flex;
   padding: 8px;
 }
-
 nav a {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  justify-content: center;
   padding: 10px 0;
-  align-items: center;
 }
-
 nav a:hover {
-  background-color: #383838;
   color: #f0f0f0;
 }
-
-.active {
-  background-color: orange;
-}
-
 /* 3.1 - Main Menu */
 .main-menu {
   flex: 1 1 auto;
   height: 55%;
-  background-color: #f0f0f0;
 }
-
 .main-menu li {
   flex-basis: 33.33%;
 }
-
 #arrow {
   width: 20px;
   height: 20px;
@@ -345,34 +249,14 @@ nav a:hover {
   background: url(../img/arrow.png) center no-repeat;
   background-size: contain;
 }
-
 #arrow:hover {
   background: url(../img/arrow-black.png) center no-repeat;
- background-size: contain; 
+  background-size: contain; 
 }
-
 .animate {
   transform: rotate(180deg);
 }
 
-/* 3.3 - Sub Menu */
-.sub-menu {
-  display: flex;
-  background-color: #f0f0f0;
-  border-top: 3px solid #383838;
-}
-
-.sub-menu li {
-  border-right: 1px solid #383838;
-}
-
-.sub-menu li:last-of-type {
-  border-right: 0;
-}
-
-.drop-down {
-  display: none;
-}
 
 /*--------------------------------------------------------------
 3.0 - Content
@@ -381,162 +265,112 @@ nav a:hover {
 main>section {
   padding-top: 100px;
 }
-
 main {
   width: 90vw;
 }
-
-.col-1-1 {
+.sub-section {
+  margin-top: 20px;
+}
+.sub-section section {
+  padding: 10px;
+}
+.col-1-1, h3, .sub-section header .col-1-8 p, nav a {
   width: 100%;
 }
-
 .col-1-2 {
   width: 50%;
 }
-
 .col-1-3 {
   width: 33.33%;
 }
-
 .col-1-4 {
   width: 25%;
 }
-
 .col-1-5 {
   width: 20%;
 }
-
 .col-1-6 {
   width: 16%;
 }
-
 .col-1-8 {
   width: 12.5%;
 }
-
 .col-2-3 {
   width: 66.66%;
 }
-
 .col-2-5 {
   width: 40%;  
 }
 .col-3-4 {
   width: 75%;
 }
-
 .col-3-5 {
   width: 60%;
 }
-
 .col-4-5 {
   width: 80%;
 }
-
 .col-5-6 {
   width: 84%;
 }
-
 .col-7-8 {
   width: 87.5%;
 }
-
-.header-lg {
-  height: 18vh;
-  justify-content: space-between
-}
-
-.header-lg>div:first-child {
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-.sub-section {
-  margin-top: 20px;
-}
-
-
 header .col-1-8 {
   padding: 0 10px;
 }
-
-.pizza-specials section, .kids-pizza-specials section, .kids-potato-specials section {
-  justify-content: space-between;
-}
-
-.potato-specialties {
-  height: 100%;
-}
 .content-wrapper {
-  justify-content: space-between;
   margin-bottom: 20px;
 }
 .content-wrapper > .col-1-2 {
   width: 49%;
-  height: 100%;
 }
-
-#potato .content-wrapper .col-1-2 {
-  flex-direction: column;
-}
-
-.contact>div.flex-parent{
-  flex-direction: column;
-} 
-
-.contact>div.flex-parent>section {
-  border-bottom: 3px solid #383838;
-}
-
-.hours.sub-section section {
-  justify-content: space-between;
-  padding: 15px 10px
-}
-
-.picnicker.sub-section section {
+.hours.sub-section section, .picnicker.sub-section section {
   padding: 15px 10px;
 }
-
-/*#about a {
-  border: 3px solid #383838;
-  padding: 10px;
-  font-size: 2rem;
-  font-family: 'Roboto slab', sans-serif;
-}*/
-
-
 #home {
   margin-top: 20px;
-/*  height: 80vh;*/
 }
-
-#home p>a {
-  border-bottom: 3px solid orange;
-}
-
-#home p>a:hover {
-  border-bottom-color: #383838;
-}
-
 #home>.content-wrapper {
   padding: 3%;
 }
-
 #home .col-1-2 {
   width: 46%;
 }
-
 .gluten-free {
   padding: 6px 10px;
 }
-
-.gluten-free header {
-  align-items: center;
+ nav a, h3, .sub-section header .col-1-8 p, .potato-specialties, .content-wrapper > .col-1-2 {
+  height: 100%;
 }
 
-.mobile-toggle {
+/* 3.2 - Alignments */
+.flex-parent, .sub-menu, nav a, nav .logo a, nav li, .header-list>li, .potato-international .header-list, .italic-cell, .sub-section header .col-1-8, h3 {
+  display: flex;
+}
+.mobile-toggle, .drop-down, h2 {
   display: none;
+}
+.align-items-center, body, .header-cell, h3, .sub-section header .col-1-8, .italic-cell, .contact section a, .header-list>li, .potato-international .header-list, nav li, nav a  {
+  align-items: center;
+}
+.flex-end, .pizza-specialties .header-list>li {
+  align-items: flex-end;
+}
+.space-between, body, .content-wrapper, .hours.sub-section, .pizza-specials section, .kids-pizza-specials section, .kids-potato-specials section {
+  justify-content: space-between;
+}
+nav ul, .sub-section ol {
+  justify-content: space-around;
+}
+nav a, nav li, .header-cell, h3, .sub-section header .col-1-8, .italic-cell, .header-list>li, .potato-international .header-list {
+  justify-content: center;
+}
+.container, body, #potato .content-wrapper .col-1-2, .contact>div.flex-parent {
+  flex-direction: column;
+}
+body {
+  position: relative;
 }
 
 
@@ -547,17 +381,14 @@ header .col-1-8 {
   align-items: center;
   justify-content: center;
 }
-
 .potato-specials .col-1-6 {
   padding: 5px;
 }
-
 .pizza-specials .col-1-6 img, .kids-pizza-specials .col-1-6 img {
   width: 100%;
   max-width: 57px;
   z-index: 1;
 }
-
 .pizza-specialties img {
   width: 15px;
 }
@@ -569,244 +400,95 @@ header .col-1-8 {
   max-width: 90px;
   min-width: 20px;
 }
-
 .kids-pizza-specialties img {
   width: 100%;
   max-width: 29px;
 }
-
-
 .contact a>div {
   background-image: url(../img/map-lg.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 200px;
 }
-
 .contact a img {
   margin-right: 15px;
   max-width: 25px;
   width: 2vw;
 }
-#beer .main-border {
-  background: orange;
-  height: 75vh;
-  padding: 100px 0;
-}
-
-/*loading screen*/
-/*.no-js #loader {
-    display: none;
-}*/
-
-#loader {
-  position: relative;
-  margin: 40px auto;
-  background: #f0f0f0;
-}
-
-#loader {
-  width: 800px;
-  height: 800px;
-}
-
-#loader .pie {
-  width: 50%;
-  height: 100%;
-  transform-origin: 100% 50%;
-  position: absolute;
-}
-
-.spinner {
-    background-image: url(../img/pizza-loader.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#loader .spinner {
-  border-radius: 100% 0 0 100% / 50% 0 0 50%;
-  z-index: 200;
-  border-right: none;
-  animation: rota 5s linear infinite;
-}
-
-#loader:hover .spinner,
-#loader:hover .filler,
-#loader:hover .mask {
-  animation-play-state: running;
-}
-
-#loader .filler {
-  border-radius: 0 100% 100% 0 / 0 50% 50% 0;
-  left: 50%;
-  opacity: 0;
-  z-index: 100;
-  animation: opa 5s steps(1, end) infinite reverse;
-  border-left: none;
-}
-
-#loader .mask {
-  width: 50%;
-  height: 100%;
-  position: absolute;
-  background: inherit;
-  opacity: 1;
-  z-index: 300;
-  animation: opa 5s steps(1, end) infinite;
-}
-
-@keyframes rota {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes opa {
-  0% {
-    opacity: 1;
-  }
-  50%, 100% {
-    opacity: 0;
-  }
-}
-
 
 
 /*--------------------------------------------------------------
-5.0 - Utility
+5.0 - Misc
 -------------------------------------------------------------- */
 /* 5.1 - Background Colors */
-.header-lg>div:first-child {
-  background-color: orange;
+body, .main-border, .main-menu, .sub-menu, .mobile-toggle {
+  background-color: #f0f0f0;
 }
-.black-bg {
+.sub-section header .col-1-8 p, h3, nav a:hover {
   background-color: #383838;
-  color: #fff;
+  color: #f0f0f0;
 }
-
-.gluten-free {
+.gluten-free, .active {
   background-color: orange;
 }
-
 body {
-  background-image: url(../img/dots.png);
-  background-repeat: repeat;
+  background-image: url(../img/dots.png) repeat;
   background-size: 15px;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
 }
-
 .logo, .sub-section header .col-1-8, .italic-cell, header ol, .sub-menu li {
   background: url(../img/speckles.png) repeat;
   background-size: 15px;
 }
-
-.pizza-international header .col-1-8, .kids-international header .col-1-8 {
+.pizza-international header .col-1-8, .sub-section.gluten-free header ol.col-1-8, .kids-international header .col-1-8 {
   background-image: none;
   padding: 4px;
 }
 
-.sub-section.gluten-free header ol.col-1-8 {
-  background-image: none;
-}
-
-/* 5.2 - Text Colors */
-/* 5.3 - Text Sizes */
-/* 5.4 - Alignments */
-.flex-parent {
-  display: flex;
-}
-
-.flex-end {
-  align-items: flex-end;
-}
-
-.align-items-center {
-  align-items: center;
-}
-
-.space-between {
-  justify-content: space-between;
-}
-
-.block > * {
-  display: block;
-}
-/*.flow {
-  flex-flow: column wrap;
-  max-height: 2000px;
-  width: 100%;
-  align-content: space-between;
-}*/
-/*this doesn't work anymore?*/
-
-/*.flow .sub-section.col-1-2 {
-  width: 49%;
-}*/
 /* 5.5 - Borders */
 .main-border {
-  border-color: #383838;
-  border-style: solid;
-  border-width: 5px 5px;
-  background-color: #f0f0f0;
+  border: 5px solid #383838;
 }
-
+.btn, .container, .logo {
+  border: 3px solid #383838;
+}
+.sub-menu {
+  border-top: 3px solid #383838;
+}
 .border-right-3 {
-  border-right-style: solid;
-  border-right-width: 3px;
-  border-right-color: #383838;
+  border-right: 3px solid #383838;
 }
-
+.sub-menu li {
+  border-right: 1px solid #383838;
+}
 .border-bottom-3 {
   border-bottom: 3px solid #383838;
 }
-
-/*#pizza .sub-section:first-of-type header, #pizza .sub-section header .flex-parent {
-  border-bottom: 3px solid #383838;;
-}*/
-
-
 .sub-section section {
   border-bottom: 1px solid #383838;
-  padding: 10px;
 }
-
 .sub-section section:last-of-type {
-  border-bottom: 0px;
+  border-bottom: none;
 }
-
+.sub-menu li:last-of-type, .logo {
+  border-right: none;
+}
 
 
 /*--------------------------------------------------------------
 6.0 - Misc Junk here
 -------------------------------------------------------------- */
-/*--SHOW/HIDE--*/
-.show {
-  display: block;
-  transition: all 0.5s ease-in-out;
-  animation: bkgchange 2s;
-}
-
 .hide {
   display: none;
   transition: all 0.5s ease-in-out;
   animation: bkgchange 2s;
 }
-
-
 @keyframes bkgchange {
   0% {opacity: 0;}
   100% {opacity: 1;}
 }
-
-
 .bounce {
   animation: bounce 3s linear infinite;
 }
-
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     -moz-transform: translateY(0);
@@ -827,20 +509,19 @@ body {
     transform: translateY(-7px);
   }
 }
-
 .rotating {
     animation: rotating 35s linear infinite;
     transform-origin: 49% 50%;
 }
-
 @keyframes rotating {
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(360deg);
-    }
+  from{
+      transform: rotate(0deg);
+  }
+  to{
+      transform: rotate(360deg);
+  }
 }
+
 
 /*--------------------------------------------------------------
 7.0 TABLET STYLES
@@ -881,7 +562,7 @@ body {
   .italic-cell {
     text-align: left;
   }
-  .h3, .italic-cell {
+  .h3, .italic-cell, #home h2 {
     justify-content: flex-start;
   }
 
@@ -961,6 +642,9 @@ body {
   /*--------------------------------------------------------------
   8.2 - Mobile Navigation
   -------------------------------------------------------------- */
+  .main-menu, .sub-menu, .mobile-toggle {
+    border: 3px solid #383838;
+  }
   .logo {
     flex: 1 1 15%;
   }
@@ -971,7 +655,7 @@ body {
     display: inline-block;
   }
   .container {
-    border: 0;
+    border: none;
     flex: 1 1 85%;
   }
   .main-menu {
@@ -979,7 +663,7 @@ body {
     font-size: 1.75rem;
   }
   .sub-menu {
-    border-top: 0;
+    border-top: none;
     margin-left: 0;
     padding-left: 0;
     font-size: 1.45rem;
@@ -1002,13 +686,10 @@ body {
     margin-left: 10px;
     width: 16px;
   }
-  .main-menu, .sub-menu, .mobile-toggle {
-    border: 3px solid #383838;
-  }
 
 
   /*--------------------------------------------------------------
-  7.3 - Mobile Structure
+  8.3 - Mobile Structure
   -------------------------------------------------------------- */
   main>section {
     padding-top: 65px;
@@ -1021,7 +702,6 @@ body {
   }
   .mobile-toggle {
     display: flex;
-    background-color: #f0f0f0;
     padding: 10px;
     color: #383838;
   }
