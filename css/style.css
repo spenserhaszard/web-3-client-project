@@ -1,28 +1,3 @@
-/*
-BEST PRACTICES
-- use sementic elements
-- Use Shorthand Hexadecimal Color Values
-- Group & Align Vendor Prefixes
-*/
-
-/* CSS Document */
-/*  -------------------------------------
-STYLE GUIDE/Reference
-----------------------------------------
-- use rems for font sizes
-- 12 column grid
-- numbers in classes always in words
-
-Thin = 100
-Extra-Light = 200
-Light = 300
-Regular = 400
-Medium = 500
-Semi-Bold = 600
-Extra-Bold = 800
-Black = 900
-*/
-
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -30,30 +5,18 @@ Black = 900
   1.1 - Headings
   1.2 - Body Copy
   1.3 - Buttons
-  1.4 - Forms
-  1.5 - Lists
-  1.6 - Nav Typography
+  1.4 - Lists
 2.0 - Navigation Menus
   2.1 - Main Menu
   2.2 - Sub Menu
-  2.3 - Footer Menu
-3.0 - Content
-  3.1 - Site Structure (Site Header, Advertisement, Site Footer)
-  3.2 - Tables
-  3.3 - Section Name
+3.0 - Content/Structure
+  3.1 - Site Structure
+  3.2 - Alignments
 4.0 - Media
-5.0 - Utility
-5.1 - Background Colors
-  5.2 - Text Colors
-  5.3 - Text Sizes
-  5.4 - Alignments
-6.0 - Misc Junk 
-7.0 - Media query
+5.1 - Random/Background Colors
+6.0 - Tablet Media Query
+7.0 - Mobile Media Query
 --------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-0.0 - Target All/General Styls
--------------------------------------------------------------- */
 
 /*--------------------------------------------------------------
 1.0 - TYPOGRAPHY
@@ -880,256 +843,190 @@ body {
 }
 
 /*--------------------------------------------------------------
-7.0 media query
--------------------------------------------------------------- */
-    /*--------------------------------------------------------------
-    >>>  T A B L E T  S T Y L E S:
-    ----------------------------------------------------------------
-    1.0 - Typography
-      1.1 - Headings
-      1.2 - Body Copy
-      1.3 - Buttons
-      1.4 - Forms
-      1.5 - Lists
-      1.6 - Nav Typography
-    2.0 - Navigation Menus
-      2.1 - Main Menu
-      2.2 - Sub Menu
-      2.3 - Footer Menu
-    3.0 - Content
-      3.1 - Site Structure (Site Header, Advertisement, Site Footer)
-      3.2 - Tables
-      3.3 - Section Name
-    4.0 - Media
-    5.0 - Utility
-    5.1 - Background Colors
-      5.2 - Text Colors
-      5.3 - Text Sizes
-      5.4 - Alignments
-    --------------------------------------------------------------*/
+7.0 TABLET STYLES
+----------------------------------------------------------------
+7.1 - Tablet Typography
+7.2 - Tablet Navigation Menus
+  7.2.1 - Main Menu
+  7.2.2 - Sub Menu
+7.3 - Tablet Structure
+  --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
-  
   /*--------------------------------------------------------------
-     1.0 - T A B L E T   T Y P O G R A P H Y 
-     -------------------------------------------------------------- */
-
-
+  7.1 - Tablet Typography
+  -------------------------------------------------------------- */
   html {
     font-size: 2vw;
   }
-
-  h3 {
-    font-size: 2vh;
-    justify-content: flex-start;
-  }
-
   #home h2 { 
     font-size: 3rem;
   }
-
   #home p {
     font-size: 1.75rem;
   }
-
   #home .sub-section:last-of-type p {
     margin-top: 40px;
   }
-
-  #home .content-wrapper .col-1-2 {
-    width: 100%;
-  }
-
   .btn {
     font-size: 1.35rem;
     padding: 1.75% 3.5%;
     margin-top: 15px;
   }
-
-  .italic-cell {
-    text-align: left;
-    justify-content: flex-start;
+  h3 {
+    font-size: 2vh;
   }
-
   .header-cell h3, .italic-cell {
     padding-left: 10px;
   }
-
-
-
- /*--------------------------------------------------------------
-    2.0 - T A B L E T   N A V I G A T I O N
-    -------------------------------------------------------------- */
-   nav {
-     width: 90vw;
-     font-size: 1.35rem;
-   }
-
-   .logo img {
-    max-height: 55px;
-   }
-
-   .logo, .container {
-      height: 65px;
+  .italic-cell {
+    text-align: left;
+  }
+  .h3, .italic-cell {
+    justify-content: flex-start;
   }
 
+
+  /*--------------------------------------------------------------
+  7.2 - Tablet Navigation
+  -------------------------------------------------------------- */
+  nav {
+   width: 90vw;
+   font-size: 1.35rem;
+  }
   .sub-menu {
     font-size: 1rem;
   }
+  .logo img {
+    max-height: 55px;
+  }
+  .logo, .container {
+    height: 65px;
+  }
 
 
-
-
-
-
- /*--------------------------------------------------------------
-    3.0 - T A B L E T   S T R U C T U R E
-    -------------------------------------------------------------- */
-   .header-lg {
+  /*--------------------------------------------------------------
+  7.3 - Tablet Structure
+  -------------------------------------------------------------- */
+  .header-lg {
     height: 10vh;
   }
-
-  .sub-section.col-1-2, .content-wrapper>.col-1-2 {
+  .sub-section.col-1-2, .content-wrapper>.col-1-2, #home .content-wrapper .col-1-2 {
     width: 100%;
   }
-
   .content-wrapper {
     display: block;
   }
-
   main {
     width: 90vw;
   }
-
   main>section {
     padding-top: 65px;
   }
-
 }/* end tablet media query */
 
+
+/*--------------------------------------------------------------
+8.0 MOBILE STYLES
+----------------------------------------------------------------
+8.1 - Mobile Typography
+8.2 - Mobile Navigation Menus
+  8.2.1 - Main Menu
+  8.2.2 - Sub Menu
+8.3 - Mobile Structure
+  --------------------------------------------------------------*/
 @media screen and (max-width: 480px) {
-    /*--------------------------------------------------------------
-    1.0 - M O B I L E  T Y P O G R A P H Y
-    -------------------------------------------------------------- */
-    html {
-      font-size: 2.5vw;
-    }
-
-    #home h2 {
-      font-size: 4.25rem;
-    }
-
-    #home p {
-      margin-top: 30px;
-      font-size: 2rem;
-    }
-
-    #home p:last-of-type {
-      margin-top: 45px;
-    }
-
-    .btn {
-      margin-top: 15px;
-      padding: 2% 6%;
-      font-size: 1.75rem;
-    }
+  /*--------------------------------------------------------------
+  8.1 - Mobile Typography
+  -------------------------------------------------------------- */
+  html {
+    font-size: 2.5vw;
+  }
+  #home h2 {
+    font-size: 4.25rem;
+  }
+  #home p {
+    margin-top: 30px;
+    font-size: 2rem;
+  }
+  #home p:last-of-type {
+    margin-top: 45px;
+  }
+  .btn {
+    margin-top: 15px;
+    padding: 2% 6%;
+    font-size: 1.75rem;
+  }
 
 
+  /*--------------------------------------------------------------
+  8.2 - Mobile Navigation
+  -------------------------------------------------------------- */
+  .logo {
+    flex: 1 1 15%;
+  }
+  .logo img {
+    max-height: 52px;
+  }
+  .container.flex-parent {
+    display: inline-block;
+  }
+  .container {
+    border: 0;
+    flex: 1 1 85%;
+  }
+  .main-menu {
+    height: 100%;
+    font-size: 1.75rem;
+  }
+  .sub-menu {
+    border-top: 0;
+    margin-left: 0;
+    padding-left: 0;
+    font-size: 1.45rem;
+    display: none;
+  }
+  .sub-menu li {
+    border-bottom: 1px solid #383838;
+    border-right: 0;
+  }
+  .sub-menu li:last-of-type {
+    border-bottom: 0;
+  }
+  .drop-down {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 33.33%; 
+  }
+  #arrow {
+    margin-left: 10px;
+    width: 16px;
+  }
+  .main-menu, .sub-menu, .mobile-toggle {
+    border: 3px solid #383838;
+  }
 
 
-    /*--------------------------------------------------------------
-    2.0 - M O B I L E  N A V I G A T I O N
-    -------------------------------------------------------------- */
-    .logo {
-      flex: 1 1 15%;
-    }
-    .logo img {
-      max-height: 52px;
-    }
-    .container.flex-parent {
-      display: inline-block;
-    }
-
-    .container {
-      border: 0;
-      flex: 1 1 85%;
-    }
-
-    .main-menu {
-      height: 100%;
-      border: 3px solid #383838;
-      font-size: 1.75rem;
-    }
-
-   .drop-down {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      width: 33.33%; 
-    }
-
-    .sub-menu {
-      border: 3px solid #383838;
-      border-top: 0;
-      margin-left: 0;
-      padding-left: 0;
-      font-size: 1.45rem;
-    }
-
-    .sub-menu li {
-      border-bottom: 1px solid #383838;
-      border-right: 0;
-    }
-
-    .sub-menu li:last-of-type {
-      border-bottom: 0;
-    }
-
-    #arrow {
-      margin-left: 10px;
-      width: 16px;
-    }
-
-    .sub-menu {
-      display: none;
-    }
-
-    .drop-down {
-      display: flex;
-    }
-
-
-
-    /*--------------------------------------------------------------
-    3.0 - M O B I L E  S T R U C T U R E 
-    -------------------------------------------------------------- */
-    main>section {
-      padding-top: 65px;
-    }
-
-    #home .col-1-2 {
-        width: 93%;
-    }
-
-    .col-1-2 {
-      width: 100%;
-    }
-
-    .mobile-toggle {
-      display: flex;
-      background-color: #f0f0f0;
-      padding: 10px;
-      color: #383838;
-      border-bottom: 3px solid #383838;
-    }
-
-    .mobile-toggle img {
-      width: 18px;
-      height: 10px;
-    }
-
-
-
-
-
-
+  /*--------------------------------------------------------------
+  7.3 - Mobile Structure
+  -------------------------------------------------------------- */
+  main>section {
+    padding-top: 65px;
+  }
+  #home .col-1-2 {
+      width: 93%;
+  }
+  .col-1-2 {
+    width: 100%;
+  }
+  .mobile-toggle {
+    display: flex;
+    background-color: #f0f0f0;
+    padding: 10px;
+    color: #383838;
+  }
+  .mobile-toggle img {
+    width: 18px;
+    height: 10px;
+  }
 }/* end mobile media query */
