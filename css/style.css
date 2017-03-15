@@ -641,7 +641,6 @@ body {
   }
   .mobile-toggle h4 {
     font-family: 'Montserrat', sans-serif;
-    color: orange;
   }
 
 
@@ -693,7 +692,6 @@ body {
     width: 16px;
   }
 
-
   /*--------------------------------------------------------------
   8.3 - Mobile Structure
   -------------------------------------------------------------- */
@@ -706,14 +704,18 @@ body {
   .col-1-2 {
     width: 100%;
   }
+  .mobile-hide {
+    display: none;
+  }
   .mobile-toggle {
     display: flex;
     padding: 10px;
     color: #383838;
+    justify-content: center;
   }
   .mobile-toggle img {
-    width: 18px;
-    height: 10px;
+    width: 17px;
+    height: 9px;
     margin-left: 20px;
   }
 }/* end mobile media query */

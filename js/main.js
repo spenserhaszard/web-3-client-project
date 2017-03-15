@@ -38,10 +38,17 @@ $(document).ready(function(){
 	});
 
 	$('.mobile-toggle').click( function() {
-	  $(this).siblings(".drawer").toggleClass("hide");
+	  $(this).siblings(".drawer").toggleClass("mobile-hide");
 	  $(".mobile-toggle img").toggleClass("animate");
 	} );
 
+	$(document).click(function(event) { 
+	    if(!$(event.target).closest('nav').length) {
+	        if($('.sub-menu').is(":visible")) {
+	            $('.sub-menu').removeClass("drop-down");
+	        }
+	    }        
+	})
 
 
 
