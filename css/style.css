@@ -196,6 +196,9 @@ nav {
   font-size: 1.85rem;
   text-transform: capitalize;
   z-index: 1000;
+
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .sub-menu {
