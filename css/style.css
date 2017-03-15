@@ -25,16 +25,13 @@ html {
   font-size: 1vw; 
   color: #383838;
 }
-
 /*1.1 - Headings */
 h2, h3 {
   text-align: center;
 }
-
 .header-cell {
   padding: 4px;
 }
-
 h3 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
@@ -44,7 +41,6 @@ h3 {
   color: #f0f0f0;
   padding: 5px;
  }
-
 #home h2 {
   font-size: 4.5rem;
   text-transform: uppercase;
@@ -55,7 +51,6 @@ h3 {
 .sub-section header .col-1-8 {
   padding: 4px;
 }
-
 .sub-section header .col-1-8 p {
   font-family: 'Montserrat', sans-serif;
   font-size: 0.9rem;
@@ -65,7 +60,6 @@ h3 {
   color: #f0f0f0;
   padding: 4px;
 }
-
 h4 {
   font-family: 'Raleway', sans-serif;
   font-size: 1.15rem;
@@ -73,7 +67,6 @@ h4 {
   text-transform: uppercase;
   font-weight: 700;
 }
-
 #home h2 {
     margin-top: 35px;
 }
@@ -92,13 +85,11 @@ h4 {
 body {
   font-family: 'Raleway', sans-serif;
 }
-
 .sub-section section p {
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.15;
 }
-
 #salad span {
   text-align: right;
   padding-right: 8px;
@@ -252,7 +243,6 @@ nav a:hover {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  height: 55%;
 }
 .main-menu li {
   -ms-flex-preferred-size: 33.33%;
@@ -465,9 +455,6 @@ body, .main-border, .main-menu, .sub-menu, .mobile-toggle {
 }
 .gluten-free, .active {
   background-color: orange;
-}
-.black {
-  background-color: #383838;
 }
 body {
   background-image: url(../img/dots.png) repeat;
