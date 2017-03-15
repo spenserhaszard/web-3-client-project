@@ -37,14 +37,9 @@ $(document).ready(function(){
 		$('.sub-menu').removeClass("drop-down");
 	});
 
-	jQuery(document).ready(function() { 
-	    jQuery(".mobile-toggle").click(function() {
-	        jQuery(this).siblings("section").toggle(); 
-	    });
-	});
-
 	$('.mobile-toggle').click( function() {
-	  $(this).siblings(".drawer").toggle();
+	  $(this).siblings(".drawer").toggleClass("hide");
+	  $(".mobile-toggle img").toggleClass("animate");
 	} );
 
 

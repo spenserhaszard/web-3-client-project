@@ -453,7 +453,7 @@ body {
 .btn, .container, .logo {
   border: 3px solid #383838;
 }
-.sub-menu {
+.sub-menu, .drawer {
   border-top: 3px solid #383838;
 }
 .border-right-3 {
@@ -639,12 +639,16 @@ body {
     padding: 2% 6%;
     font-size: 1.75rem;
   }
+  .mobile-toggle h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: orange;
+  }
 
 
   /*--------------------------------------------------------------
   8.2 - Mobile Navigation
   -------------------------------------------------------------- */
-  .main-menu, .sub-menu, .mobile-toggle {
+  .main-menu, .sub-menu {
     border: 3px solid #383838;
   }
   .logo {
@@ -710,5 +714,6 @@ body {
   .mobile-toggle img {
     width: 18px;
     height: 10px;
+    margin-left: 20px;
   }
 }/* end mobile media query */
