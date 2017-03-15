@@ -217,7 +217,6 @@ nav li {
   flex: 1 0 auto;
 }
 
-
 .logo {
   flex: 1 1 10%;
 }
@@ -430,6 +429,9 @@ body, .main-border, .main-menu, .sub-menu, .mobile-toggle {
 }
 .gluten-free, .active {
   background-color: orange;
+}
+.black {
+  background-color: #383838;
 }
 body {
   background-image: url(../img/dots.png) repeat;
