@@ -437,7 +437,7 @@ body {
   background-repeat: no-repeat;
   min-height: 200px;
 }
-.contact a img, #delivery .col-1-1 a img, .contact a svg, #delivery a svg {
+.contact a img, #delivery .col-1-1 a img, .contact a svg, #delivery a svg, svg {
   margin-right: 15px;
   max-width: 25px;
   width: 2vw;
