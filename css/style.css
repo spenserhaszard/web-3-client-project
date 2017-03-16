@@ -440,7 +440,7 @@ body {
 .contact a img, #delivery .col-1-1 a img, .contact a svg, #delivery a svg, svg {
   margin-right: 15px;
   max-width: 25px;
-  width: 2vw;
+  width: 1vw;
 }
 .cls-1:hover {
     fill: orange;
@@ -480,7 +480,7 @@ body {
 .main-border {
   border: 5px solid #383838;
 }
-.border-btm {
+#border-now {
   border-bottom: 1px solid #383838;
 }
 .btn, .container, .logo {
