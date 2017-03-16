@@ -362,7 +362,7 @@ nav a, h3, .sub-section header .col-1-8 p, .potato-specialties, .content-wrapper
 .mobile-toggle, .drop-down, h2 {
   display: none;
 }
-.align-items-center, body, .header-cell, h3, .sub-section header .col-1-8, .italic-cell, .contact section a, .header-list>li, .potato-international .header-list, nav li, nav a {
+.align-center, body, .header-cell, h3, .sub-section header .col-1-8, .italic-cell, .contact section a, .header-list>li, .potato-international .header-list, nav li, nav a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -372,7 +372,7 @@ nav a, h3, .sub-section header .col-1-8 p, .potato-specialties, .content-wrapper
   -ms-flex-align: end;
   align-items: flex-end;
 }
-.space-between, body, .content-wrapper, .hours.sub-section, .pizza-specials section, .kids-pizza-specials section, .kids-potato-specials section {
+.justify-between, body, .content-wrapper, .hours.sub-section, .pizza-specials section, .kids-pizza-specials section, .kids-potato-specials section {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -419,13 +419,15 @@ body {
 .pizza-specialties img {
   width: 15px;
 }
-.salad-img, .potato-img {
-  width: 40%;
-}
 .potato-specials img {
   width: 70%;
+}
+.potato-specials img, .bread-specialties .col-1-8 img {
   max-width: 90px;
   min-width: 20px;
+}
+.bread-specialties .col-1-8 img, .salad-img, .potato-img {
+  width: 50%;
 }
 .kids-pizza-specialties img {
   width: 100%;
@@ -481,7 +483,7 @@ body {
 .btn, .container, .logo {
   border: 3px solid #383838;
 }
-.sub-menu, .drawer {
+.sub-menu {
   border-top: 3px solid #383838;
 }
 .border-right-3 {
@@ -794,6 +796,9 @@ body {
     width: 17px;
     height: 9px;
     margin-left: 20px;
+  }
+  .drawer {
+    border-top: 3px solid #383838;
   }
 }
 

@@ -1,12 +1,5 @@
 $(document).ready(function(){
 
-
-	// setTimeout(function(){
-	//     $('#loader').addClass('hide');
-	//     $('#home').addClass('show');
-	// }, 3000);
-
-
 	  $("nav a").on("click", function() {
 	  	$('.sub-menu').removeClass("drop-down");
 	    $("nav a").removeClass('active');
@@ -48,49 +41,7 @@ $(document).ready(function(){
 	            $('.sub-menu').removeClass("drop-down");
 	        }
 	    }        
-	})
-
-
-
-
-	//   $(document).click(function(e) {
-	//     var target = e.target;
-	//     if (!$(target).is('nav a') {
-	//       $('.sub-menu').removeClass("drop-down");
-	//     }
-	//   });
-	// });
-
-
-
-	   
-
-	   
-
-
-
-
-
-	    // Click a list item to close sub-menu   
-	  //   $(document).click(function(e) {
-	  //     var target = e.target;
-	  //     if (!$(target).is('.sub-menu a') {
-	  //       $('nav').removeClass("maximize");
-	  //     }
-	  //   });
-	  // });
-
-	  // Click anywhere to reverse animation and close sub-menu
-	  // $(document).click(function(event) {
-	  //   if (!$(event.target).closest('.dropdown-toggle').length) {
-	  //     if ($('.dropdown').is(':visible')) {
-	  //       $('.dropdown').hide();
-	  //     } {
-	  //       $('.diagonal').removeClass('rotate');
-	  //     }
-	  //   }
-	  // });
-
+	})   
 
 
 });
