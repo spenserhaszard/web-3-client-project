@@ -437,12 +437,14 @@ body {
   background-repeat: no-repeat;
   min-height: 200px;
 }
-.contact a img, #delivery .col-1-1 a img {
+.contact a img, #delivery .col-1-1 a img, .contact a svg, #delivery a svg {
   margin-right: 15px;
   max-width: 25px;
   width: 2vw;
 }
-
+.cls-1:hover {
+    fill: orange;
+}
 /*--------------------------------------------------------------
 5.0 - Misc
 -------------------------------------------------------------- */
@@ -477,6 +479,9 @@ body {
 
 .main-border {
   border: 5px solid #383838;
+}
+.border-btm {
+  border-bottom: 1px solid #383838;
 }
 .btn, .container, .logo {
   border: 3px solid #383838;
