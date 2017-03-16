@@ -362,7 +362,7 @@ nav a, h3, .sub-section header .col-1-8 p, .potato-specialties, .content-wrapper
 .mobile-toggle, .drop-down, h2 {
   display: none;
 }
-.align-center, body, .header-cell, h3, .sub-section header .col-1-8, .italic-cell, .contact section a, .header-list>li, .potato-international .header-list, nav li, nav a {
+.align-items-center, body, .header-cell, h3, .sub-section header .col-1-8, .italic-cell, .contact section a, .header-list>li, .potato-international .header-list, nav li, nav a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -372,7 +372,7 @@ nav a, h3, .sub-section header .col-1-8 p, .potato-specialties, .content-wrapper
   -ms-flex-align: end;
   align-items: flex-end;
 }
-.justify-between, body, .content-wrapper, .hours.sub-section, .pizza-specials section, .kids-pizza-specials section, .kids-potato-specials section {
+.space-between, body, .content-wrapper, .hours.sub-section, .pizza-specials section, .kids-pizza-specials section, .kids-potato-specials section {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -419,15 +419,13 @@ body {
 .pizza-specialties img {
   width: 15px;
 }
+.salad-img, .potato-img {
+  width: 40%;
+}
 .potato-specials img {
   width: 70%;
-}
-.potato-specials img, .bread-specialties .col-1-8 img {
   max-width: 90px;
   min-width: 20px;
-}
-.bread-specialties .col-1-8 img, .salad-img, .potato-img {
-  width: 50%;
 }
 .kids-pizza-specialties img {
   width: 100%;
@@ -439,7 +437,7 @@ body {
   background-repeat: no-repeat;
   min-height: 200px;
 }
-.contact a img {
+.contact a img, #delivery a img {
   margin-right: 15px;
   max-width: 25px;
   width: 2vw;
@@ -483,7 +481,7 @@ body {
 .btn, .container, .logo {
   border: 3px solid #383838;
 }
-.sub-menu {
+.sub-menu, .drawer {
   border-top: 3px solid #383838;
 }
 .border-right-3 {
@@ -623,7 +621,7 @@ body {
     margin-top: 15px;
   }
   h3 {
-    font-size: 2vh;
+    font-size: 2vw;
   }
   .header-cell h3, .italic-cell {
     padding-left: 10px;
@@ -656,7 +654,7 @@ body {
   7.3 - Tablet Structure
   -------------------------------------------------------------- */
   .header-lg {
-    height: 10vh;
+    height: 10vw;
   }
   .sub-section.col-1-2, .content-wrapper>.col-1-2, #home .content-wrapper .col-1-2 {
     width: 100%;
@@ -796,9 +794,6 @@ body {
     width: 17px;
     height: 9px;
     margin-left: 20px;
-  }
-  .drawer {
-    border-top: 3px solid #383838;
   }
 }
 
