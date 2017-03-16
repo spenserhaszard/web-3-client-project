@@ -372,7 +372,7 @@ nav a, h3, .sub-section header .col-1-8 p, .potato-specialties, .content-wrapper
   -ms-flex-align: end;
   align-items: flex-end;
 }
-.space-between, body, .content-wrapper, .hours.sub-section, .pizza-specials section, .kids-pizza-specials section, .kids-potato-specials section {
+.justify-between, body, .content-wrapper, .hours.sub-section, .pizza-specials section, .kids-pizza-specials section, .kids-potato-specials section {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -437,7 +437,7 @@ body {
   background-repeat: no-repeat;
   min-height: 200px;
 }
-.contact a img, #delivery a img {
+.contact a img, #delivery .col-1-1 a img {
   margin-right: 15px;
   max-width: 25px;
   width: 2vw;
