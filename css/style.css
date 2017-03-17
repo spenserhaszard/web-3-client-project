@@ -362,7 +362,7 @@ nav a, h3, .sub-section header .col-1-8 p, .potato-specialties, .content-wrapper
 .mobile-toggle, .drop-down, h2 {
   display: none;
 }
-.align-items-center, body, .header-cell, h3, .sub-section header .col-1-8, .italic-cell, .contact section a, .header-list>li, .potato-international .header-list, nav li, nav a {
+.align-center, body, .header-cell, h3, .sub-section header .col-1-8, .italic-cell, .contact section a, .header-list>li, .potato-international .header-list, nav li, nav a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -386,7 +386,7 @@ nav a, nav li, .header-cell, h3, .sub-section header .col-1-8, .italic-cell, .he
   -ms-flex-pack: center;
   justify-content: center;
 }
-.container, body, #potato .content-wrapper .col-1-2, .contact>div.flex-parent {
+.container, body, #potato .content-wrapper .col-1-2, .contact>div.flex-parent, .column {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -395,12 +395,7 @@ nav a, nav li, .header-cell, h3, .sub-section header .col-1-8, .italic-cell, .he
 body {
   position: relative;
 }
-
-/*--------------------------------------------------------------
-4.0 - Media
--------------------------------------------------------------- */
-
-.pizza-specials .col-1-6, .kids-pizza-specials .col-1-6, .potato-specials .col-1-6, .kids-pizza-specialties .col-1-8 {
+.pizza-specials .col-1-6, .kids-potato-specials .col-1-6, .kids-pizza-specials .col-1-6, .potato-specials .col-1-6, .kids-pizza-specialties .col-1-8 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -408,22 +403,25 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
 }
+
+/*--------------------------------------------------------------
+4.0 - Media
+-------------------------------------------------------------- */
 .potato-specials .col-1-6 {
   padding: 5px;
 }
 .pizza-specials .col-1-6 img, .kids-pizza-specials .col-1-6 img {
   width: 100%;
-  max-width: 57px;
+  max-width: 68px;
   z-index: 1;
 }
 .pizza-specialties img {
   width: 15px;
 }
-.salad-img, .potato-img {
+.potato-img {
   width: 40%;
 }
 .potato-specials img {
-  width: 70%;
   max-width: 90px;
   min-width: 20px;
 }
@@ -432,18 +430,48 @@ body {
   max-width: 29px;
 }
 .contact a>div {
-  background-image: url(../img/map-lg.jpeg);
-  background-size: cover;
+  background-image: url(../img/map.png);
+}
+.contact a>div {
+  background-size: 850px;
   background-repeat: no-repeat;
   min-height: 200px;
+  background-position: center -80px;
 }
-.contact a img, #delivery .col-1-1 a img, .contact a svg, #delivery a svg, svg {
+.picnicker>a>div {
+  background-image: url(../img/delivery-map.png);
+  background-size: 640px;
+  background-repeat: no-repeat;
+  min-height: 210px;
+  background-position: center -19px;
+}
+.picknicker>a {
+  display: block;
+}
+.contact a img, #delivery .col-1-1 a img, .contact a svg, #delivery a svg, .svg, .cls-1 {
   margin-right: 15px;
   max-width: 25px;
+  min-width: 15px;
   width: 1vw;
 }
-.cls-1:hover {
-    fill: orange;
+.svg:hover, .cls-1:hover {
+  fill: orange;
+}
+#delivery a:hover, .contact a:hover {
+  color: orange;
+}
+#bread img.bounce, .salad-img, .potato-specials img {
+  width: 50%;
+}
+.kids-potato-specials img {
+  width: 70%;
+}
+.steam {
+  width: 35px;
+  margin-left: 15px;
+}
+.picnicker>a {
+  display: block;
 }
 /*--------------------------------------------------------------
 5.0 - Misc
@@ -486,7 +514,7 @@ body {
 .btn, .container, .logo {
   border: 3px solid #383838;
 }
-.sub-menu, .drawer {
+.sub-menu, .border-top-3 {
   border-top: 3px solid #383838;
 }
 .border-right-3 {
@@ -495,17 +523,20 @@ body {
 .sub-menu li {
   border-right: 1px solid #383838;
 }
-.border-bottom-3 {
-  border-bottom: 3px solid #383838;
-}
 .sub-section section {
   border-bottom: 1px solid #383838;
 }
-.sub-section section:last-of-type {
+.sub-section section:last-of-type, .sub-section section.phone {
   border-bottom: none;
+}
+.border-bottom-3, .location {
+  border-bottom: 3px solid #383838;
 }
 .sub-menu li:last-of-type, .logo {
   border-right: none;
+}
+.location {
+  border-bottom: 3px solid #383838 !important;
 }
 
 /*--------------------------------------------------------------
@@ -593,7 +624,18 @@ body {
     transform: rotate(360deg);
   }
 }
+.shake {
+  animation: shake 2s infinite;
+  opacity: 1;
+}
 
+@keyframes shake {
+
+  100% {
+    transform: translateY(-6px);
+    opacity: 0;
+  }
+}
 /*--------------------------------------------------------------
 7.0 TABLET STYLES
 ----------------------------------------------------------------
@@ -626,7 +668,7 @@ body {
     margin-top: 15px;
   }
   h3 {
-    font-size: 2vw;
+    font-size: 3vw;
   }
   .header-cell h3, .italic-cell {
     padding-left: 10px;
@@ -643,7 +685,7 @@ body {
   7.2 - Tablet Navigation
   -------------------------------------------------------------- */
   nav {
-    width: 90vw;
+    width: 95vw;
     font-size: 1.35rem;
   }
   .sub-menu {
@@ -668,7 +710,7 @@ body {
     display: block;
   }
   main {
-    width: 90vw;
+    width: 95vw;
   }
   main>section {
     padding-top: 65px;
@@ -704,6 +746,9 @@ body {
   }
   #home p:last-of-type {
     margin-top: 45px;
+  }
+  h3 {
+    font-size: 4vw;
   }
   .btn {
     margin-top: 15px;
@@ -800,6 +845,11 @@ body {
     height: 9px;
     margin-left: 20px;
   }
+  .drawer {
+    border-top: 3px solid #383838;
+  }
+  .pizza-specials .col-1-6 img, .kids-pizza-specials .col-1-6 img {
+      max-width: 54px;
 }
-
+}
 /* end mobile media query */
